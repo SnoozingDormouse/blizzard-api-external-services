@@ -28,8 +28,8 @@ namespace blizzard_api_external_services
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "WoW Time Optimisation API",
-                    Description = "API for WoW Time Optimisation",
+                    Title = "Blizzard API External Services",
+                    Description = "Microservice to collect Blizard World of Warcraft Data from the Blizzard API",
                 });
             });
         }
@@ -43,7 +43,7 @@ namespace blizzard_api_external_services
             }
 
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WowToolsCore API 0.1.0"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BlizzardAPIExternalServices API 0.1.0"));
 
             app.UseHttpsRedirection();
 
