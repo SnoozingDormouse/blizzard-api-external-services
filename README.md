@@ -1,5 +1,5 @@
 # blizzard-api-external-services
-stand-alone microservice that pulls meta-data from the blizzard api
+stand-alone microservice that pulls meta-data from the blizzard api and stores it in a database for your project use
 
 This micro-service is intended to work in conjuction with the WoWTimeOptimisation project - therefore it shares a database project
 with that project.  However it is perfectly fine to use it stand-alone.
