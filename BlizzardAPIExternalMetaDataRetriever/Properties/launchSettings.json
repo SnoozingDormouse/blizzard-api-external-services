@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "blizzard_api_external_services": {
+    "BlizzardAPIExternalMetaDataRetriever": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

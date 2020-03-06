@@ -1,3 +1,5 @@
+using System.Net.Http;
+using BlizzardAPIExternalMetaDataRetriever.Achievement;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -5,13 +7,18 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace blizzard_api_external_services
+namespace BlizzardAPIExternalMetaDataRetriever
 {
     public class Startup
     {
+        private string _clientId;
+        private string _clientSecret;
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            _clientId = Configuration["Battlenet:ClientId"];
+            _clientSecret = Configuration["Battlenet:ClientSecret"];
         }
 
         public IConfiguration Configuration { get; }
@@ -21,6 +28,8 @@ namespace blizzard_api_external_services
         {
             services.AddHttpClient();
             services.AddControllers();
+
+            services.AddSingleton<IAchievementService>(s => new AchievementService(s.GetService<IHttpClientFactory>(), _clientId, _clientSecret));
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
