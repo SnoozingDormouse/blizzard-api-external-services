@@ -46,16 +46,6 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
                     achievements.Add(achievement);
                 }
 
-                //var cata = achievements.Select(a => a.Category);
-                //var catb = cata.GroupBy(c => c.Id);
-                //var catc = catb.Select(i => i.FirstOrDefault());
-                //var catd = catc.ToList();
-
-                //var crita = achievements.Select(a => a.Criteria);
-                //var critb = crita.GroupBy(c => c.Id);
-                //var critc = critb.Select(i => i.FirstOrDefault());
-                //var critd = critc.ToList();
-
                 var categories = achievements.Select(a => a.category).Where(c => c != null).GroupBy(c => c.Id).Select(i => i.FirstOrDefault()).ToList();
                 var criteria = achievements.Select(a => a.criteria).Where(c => c != null).GroupBy(c => c.Id).Select(i => i.FirstOrDefault()).ToList();
                 var entityAchievements =
@@ -69,7 +59,8 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
                             Description = a.description,
                             Points = a.points,
                             IsAccountWide = a.is_account_wide,
-                            CriteriaId = a.criteria?.Id
+                            CriteriaId = a.criteria?.Id,
+                            NextAchievementId = a.next_achievement?.Id
                         });
 
                 _achievementContext.Categories.AddRange(categories);
