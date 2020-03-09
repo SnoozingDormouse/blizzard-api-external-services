@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Net.Http;
 using BlizzardAPIExternalMetaDataRetriever.Achievements.IncomingModels;
+using BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices;
 using BlizzardData.Data;
 using FluentAssertions;
 using FluentAssertions.Execution;
@@ -21,15 +21,11 @@ namespace BlizzardAPIExternalMetaDataRetriever.Tests
         public CriteriaService()
         {
             var mockAchievementContext = new Mock<IAchievementContext>();
-            var mockClientFactory = new Mock<IHttpClientFactory>();
-            var aClientId = "1";
-            var aClientSecret = "secret";
+            var mockBlizzardAPIService = new Mock<IBlizzardAPIService>();
 
             _sut = new Achievements.CriteriaService(
                     mockAchievementContext.Object,
-                    mockClientFactory.Object,
-                    aClientId,
-                    aClientSecret);
+                    mockBlizzardAPIService.Object);
         }
 
         [Fact]

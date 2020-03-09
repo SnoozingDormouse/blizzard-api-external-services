@@ -4,37 +4,63 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using BlizzardAPIExternalMetaDataRetriever.Services.Authorization;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 
 namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
 {
     public class BlizzardAPIService : IBlizzardAPIService
     {
+        private readonly string _referenceCharacter;
+        private readonly string _referenceRealm;
+
         private readonly String _clientId;
         private readonly String _clientSecret;
         private readonly IHttpClientFactory _clientFactory;
 
         private AccessToken _accessToken;
-        private string _queryURL;
+        private string _gameDataQueryURL;
+        private string _profileQueryURL;
+        private string _tokenURL;
 
-        public BlizzardAPIService(IHttpClientFactory clientFactory, string clientId, string clientSecret, string queryURL)
+        public BlizzardAPIService(IHttpClientFactory clientFactory, IConfiguration configuration)
         {
             _clientFactory = clientFactory;
-            _clientId = clientId;
-            _clientSecret = clientSecret;
-            _queryURL = queryURL;
+            _clientId = configuration["Battlenet:ClientId"];
+            _clientSecret = configuration["Battlenet:ClientSecret"];
+            _referenceRealm = configuration["Battlenet:ReferenceRealm"];
+            _referenceCharacter = configuration["Battlenet:ReferenceCharacter"];
+
+            _gameDataQueryURL = configuration["Battlenet:GameDataQueryURL"];
+            _profileQueryURL = configuration["Battlenet:ProfileQueryURL"];
+            _tokenURL = configuration["Battlenet:TokenURL"];
         }
 
-        public string GetBlizzardAPIResponseAsJson(string apiPath)
+        public string GetBlizzardGameDataAPIResponseAsJson(string apiPath)
+        {
+            var url = String.Format(_gameDataQueryURL, apiPath, "{1}");
+            return GetBlizzardAPIResponseAsJson(url);
+        }
+
+        public string GetBlizzardDefaultProfileAPIResponseAsJson(string apiPath)
+        {
+            return GetBlizzardProfileAPIResponseAsJson(apiPath, _referenceRealm, _referenceCharacter);
+        }
+
+        public string GetBlizzardProfileAPIResponseAsJson(string apiPath, string realm, string character)
+        {
+            var url = String.Format(_profileQueryURL, realm, character, apiPath, "{1}");
+            return GetBlizzardAPIResponseAsJson(url);
+        }
+
+        private string GetBlizzardAPIResponseAsJson(string queryURL)
         {
             if (!ValidAccessToken())
             {
                 _accessToken = GetValidAccessTokenFromBlizzard().Result;
             }
 
-            var apiURL = String.Format(_queryURL, 
-                apiPath,
-                _accessToken.Token);
+            var apiURL = String.Format(queryURL, _accessToken.Token);
 
             return GetBlizzardAPIInfoAsync(apiURL).Result;
         }
@@ -88,11 +114,10 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
                             };
 
                     tokenRequestParameters = new FormUrlEncodedContent(parameters).ReadAsStringAsync().Result;
-                    string apiURL = "https://eu.battle.net/oauth/token";
 
                     HttpContent content = new StringContent(tokenRequestParameters, Encoding.UTF8, "application/x-www-form-urlencoded");
 
-                    HttpResponseMessage response = await httpClient.PostAsync(apiURL, content);
+                    HttpResponseMessage response = await httpClient.PostAsync(_tokenURL, content);
                     if (response.IsSuccessStatusCode)
                     {
                         token = JsonConvert

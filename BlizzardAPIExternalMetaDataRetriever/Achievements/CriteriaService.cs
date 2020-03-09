@@ -10,26 +10,23 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using BlizzardAPIExternalMetaDataRetriever.Achievements.IncomingModels;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 
 namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 {
-    public class CriteriaService : BlizzardProfileAPIService, ICriteriaService
+    public class CriteriaService : ICriteriaService
     {
-        private readonly string _baseCharacter = "khoria";
-        private readonly string _baseRealm = "moonglade";
-
-        public string _baseCriteriaPath;
-        IAchievementContext _achievementContext;
+        private IAchievementContext _achievementContext;
+        private IBlizzardAPIService _blizzardAPIService;
+        private readonly string _pathURL;
 
         public CriteriaService(
             IAchievementContext achievementContext,
-            IHttpClientFactory clientFactory, 
-            string clientId, 
-            string clientSecret)
-            : base(clientFactory, clientId, clientSecret)
+            IBlizzardAPIService blizzardAPIService)
         {
-            _baseCriteriaPath = "profile/wow/character/{0}/{1}/achievements";
             _achievementContext = achievementContext;
+            _blizzardAPIService = blizzardAPIService;
+            _pathURL = "achievements";
         }
 
         public string UpdateAll()
@@ -38,30 +35,31 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
             {
                 ClearCriteria();
 
-                var response = GetBlizzardAPIResponseAsJson(CreateQueryURL());
-                var achievementsWithCriteria =
-                    JsonConvert.DeserializeObject<incoming::AchievementWrapper>(response)
-                    .achievements
-                    .Take(100);
+                var criteria = FlattenCriteria(RetrieveAchievementsWithCriteria());
 
-                var criteria = FlattenCriteria(achievementsWithCriteria);
+                var entityCriteria = criteria.Select(c => (entities::Criteria)c);
+                _achievementContext.Criteria.AddRange(entityCriteria);
+                var saved = _achievementContext.SaveChanges();
 
-                //_achievementContext.Categories.AddRange(categories);
-                //_achievementContext.Achievements.AddRange(entityAchievements);
-                //_achievementContext.SaveChanges();
-
-                return response;
+                return saved.ToString() + " criteria saved to database";
             }
             catch (Exception ex)
             {
-                return ex.Message.ToString() + ex.StackTrace.ToString();
+                return ex.Message.ToString() + "\r\n" +
+                    ex.InnerException.ToString() + "\r\n" +
+                    ex.StackTrace.ToString();
             }
         }
 
-        public string RetrieveCriteria()
+        public IEnumerable<incoming::Achievement> RetrieveAchievementsWithCriteria()
         {
-            return GetBlizzardAPIResponseAsJson(CreateQueryURL());
+            var response = _blizzardAPIService.GetBlizzardDefaultProfileAPIResponseAsJson(_pathURL);
+            
+            return
+                JsonConvert.DeserializeObject<incoming::AchievementWrapper>(response)
+                .achievements;
         }
+
         public ReadOnlyCollection<models::Criteria> GetAllCriteria(string response)
         {
             var achievementsWithCriteria =
@@ -86,91 +84,47 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 
         private List<FlattenedCriteria> FlattenCriteria(IEnumerable<Achievement> achievementsWithCriteria)
         {
-            var EntityCriteria = new List<FlattenedCriteria>();
+            _criteriaList = new List<FlattenedCriteria>();
 
             foreach (var achievement in achievementsWithCriteria)
             {
                 var achievementId = achievement.id;
                 int? parentId = null;
 
-                EntityCriteria.Add(new incoming::FlattenedCriteria
-                {
-                    achievementId = achievementId,
-                    parentId = parentId,
-                    id = achievement.criteria.id,
-                    amount = achievement.criteria.amount,
-                    is_completed = achievement.criteria.is_completed
-                });
-
-                var firstLevelParentId = achievement.criteria.id;
-
-                if (achievement.criteria.child_criteria != null)
-                {
-                    foreach (var child in achievement.criteria.child_criteria)
-                    {
-                        EntityCriteria.Add(new incoming::FlattenedCriteria
-                        {
-                            achievementId = achievementId,
-                            parentId = firstLevelParentId,
-                            id = child.id,
-                            amount = child.amount,
-                            is_completed = child.is_completed
-                        });
-
-                        if (child.child_criteria != null)
-                        {
-                            var secondLevelParentId = child.id;
-
-                            foreach (var grandchild in child.child_criteria)
-                            {
-                                EntityCriteria.Add(new incoming::FlattenedCriteria
-                                {
-                                    achievementId = achievementId,
-                                    parentId = secondLevelParentId,
-                                    id = grandchild.id,
-                                    amount = grandchild.amount,
-                                    is_completed = grandchild.is_completed
-                                });
-
-                                if (grandchild.child_criteria != null)
-                                {
-                                    var thirdLevelParentId = grandchild.id;
-
-                                    foreach (var greatgrandchild in grandchild.child_criteria)
-                                    {
-                                        EntityCriteria.Add(new incoming::FlattenedCriteria
-                                        {
-                                            achievementId = achievementId,
-                                            parentId = thirdLevelParentId,
-                                            id = greatgrandchild.id,
-                                            amount = greatgrandchild.amount,
-                                            is_completed = greatgrandchild.is_completed
-                                        });
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                if (achievement.criteria != null)
+                    AddToEntitity(achievementId, achievement.criteria, parentId);
             }
 
-            return EntityCriteria;
+            return _criteriaList;
+        }
+
+        List<FlattenedCriteria> _criteriaList;
+
+        private void AddToEntitity(int achievementId, Criteria criteria, int? parentId)
+        {
+            _criteriaList.Add(new incoming::FlattenedCriteria
+            {
+                achievementId = achievementId,
+                parentId = parentId,
+                id = criteria.id,
+                amount = criteria.amount,
+                is_completed = criteria.is_completed
+            });
+
+            if (criteria.child_criteria != null)
+            {
+                Debug.WriteLine("requesting drilling down for {0} criteria", criteria.child_criteria.Count());
+                foreach (var childCriteria in criteria.child_criteria)
+                {
+                    AddToEntitity(achievementId, childCriteria, criteria.id);
+                }
+            }
         }
 
         private void ClearCriteria()
         {
             _achievementContext.Criteria.RemoveRange(_achievementContext.Criteria);
             _achievementContext.SaveChanges();
-        }
-
-        private string CreateQueryURL()
-        {
-            return CreateQueryURL(_baseRealm, _baseCharacter);
-        }
-
-        private string CreateQueryURL(string realm, string name)
-        {
-            return String.Format(_baseCriteriaPath, realm, name);
         }
     }
 } 

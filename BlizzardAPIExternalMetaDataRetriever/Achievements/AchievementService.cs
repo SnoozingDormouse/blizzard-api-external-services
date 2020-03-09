@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using incoming = BlizzardAPIExternalMetaDataRetriever.Achievements.IncomingModels;
 using BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices;
 using BlizzardData.Data;
@@ -10,22 +9,21 @@ using Newtonsoft.Json;
 
 namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 {
-    public class AchievementService : BlizzardGameDataAPIService, IAchievementService
+    public class AchievementService : IAchievementService
     {
+        private IAchievementContext _achievementContext;
+        private IBlizzardAPIService _blizzardAPIService;
         public string _indexApiPath;
         public string _achievementPath;
-        IAchievementContext _achievementContext;
 
         public AchievementService(
             IAchievementContext achievementContext,
-            IHttpClientFactory clientFactory, 
-            string clientId, 
-            string clientSecret)
-            : base(clientFactory, clientId, clientSecret)
+            IBlizzardAPIService blizzardAPIService)
         {
             _indexApiPath = "data/wow/achievement/index";
             _achievementPath = "/data/wow/achievement/{0}";
             _achievementContext = achievementContext;
+            _blizzardAPIService = blizzardAPIService;
         }
 
         public string UpdateAll()
@@ -34,19 +32,20 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
             {
                 ClearAllAchievements();
 
-                var response = GetBlizzardAPIResponseAsJson(_indexApiPath);
+                var response = _blizzardAPIService.GetBlizzardGameDataAPIResponseAsJson(_indexApiPath);
                 var achievementIds = JsonConvert.DeserializeObject<incoming::AchievementWrapper>(response).achievements.Select(a => a.id);
 
                 var achievements = new List<incoming::Achievement>();
 
                 foreach (int id in achievementIds)
                 {
-                    response = GetBlizzardAPIResponseAsJson(String.Format(_achievementPath, id));
+                    response = _blizzardAPIService.GetBlizzardGameDataAPIResponseAsJson(String.Format(_achievementPath, id));
                     var achievement = JsonConvert.DeserializeObject<incoming::Achievement>(response);
                     achievements.Add(achievement);
                 }
 
                 var categories = achievements.Select(a => a.category).Where(c => c != null).GroupBy(c => c.Id).Select(i => i.FirstOrDefault()).ToList();
+
                 var entityAchievements =
                     achievements
                     .Select(a =>

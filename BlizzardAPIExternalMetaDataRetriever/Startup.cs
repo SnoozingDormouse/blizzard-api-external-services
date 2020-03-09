@@ -1,29 +1,23 @@
 using System;
-using System.Net.Http;
 using BlizzardAPIExternalMetaDataRetriever.Achievements;
+using BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices;
 using BlizzardData.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace BlizzardAPIExternalMetaDataRetriever
 {
     public class Startup
     {
-        private readonly string _clientId;
-        private readonly string _clientSecret;
-
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
             ConnectionString = Configuration["Database:ConnectionString"];
-
-            _clientId = Configuration["Battlenet:ClientId"];
-            _clientSecret = Configuration["Battlenet:ClientSecret"];
         }
 
         public IConfiguration Configuration { get; }
@@ -37,17 +31,15 @@ namespace BlizzardAPIExternalMetaDataRetriever
 
             services.AddDbContext<AchievementContext>(options => options.UseSqlServer(ConnectionString), ServiceLifetime.Scoped);
 
+            services.AddSingleton<IBlizzardAPIService, BlizzardAPIService>();
+
             services.AddScoped<IAchievementService>(s => new AchievementService(
                 s.GetService<IAchievementContext>(),
-                s.GetService<IHttpClientFactory>(),
-                _clientId,
-                _clientSecret));
+                s.GetService<IBlizzardAPIService>()));
 
             services.AddScoped<ICriteriaService>(s => new CriteriaService(
                 s.GetService<AchievementContext>(),
-                s.GetService<IHttpClientFactory>(),
-                _clientId,
-                _clientSecret));
+                s.GetService<IBlizzardAPIService>()));
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
