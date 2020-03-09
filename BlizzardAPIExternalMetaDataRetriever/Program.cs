@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace blizzard_api_external_services
+namespace BlizzardAPIExternalMetaDataRetriever
 {
     public class Program
     {
