@@ -10,14 +10,14 @@ using Newtonsoft.Json;
 
 namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 {
-    public class AchievementService : BlizzardAPIService, IAchievementService
+    public class AchievementService : BlizzardGameDataAPIService, IAchievementService
     {
         public string _indexApiPath;
         public string _achievementPath;
-        AchievementContext _achievementContext;
+        IAchievementContext _achievementContext;
 
         public AchievementService(
-            AchievementContext achievementContext,
+            IAchievementContext achievementContext,
             IHttpClientFactory clientFactory, 
             string clientId, 
             string clientSecret)
@@ -28,7 +28,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
             _achievementContext = achievementContext;
         }
 
-        public string UpdateAllAchievements()
+        public string UpdateAll()
         {
             try
             {
@@ -47,7 +47,6 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
                 }
 
                 var categories = achievements.Select(a => a.category).Where(c => c != null).GroupBy(c => c.Id).Select(i => i.FirstOrDefault()).ToList();
-                var criteria = achievements.Select(a => a.criteria).Where(c => c != null).GroupBy(c => c.Id).Select(i => i.FirstOrDefault()).ToList();
                 var entityAchievements =
                     achievements
                     .Select(a =>
@@ -59,12 +58,11 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
                             Description = a.description,
                             Points = a.points,
                             IsAccountWide = a.is_account_wide,
-                            CriteriaId = a.criteria?.Id,
+                            CriteriaId = a.criteria?.id,
                             NextAchievementId = a.next_achievement?.Id
                         });
 
                 _achievementContext.Categories.AddRange(categories);
-                _achievementContext.Criteria.AddRange(criteria);
                 _achievementContext.Achievements.AddRange(entityAchievements);
                 _achievementContext.SaveChanges();
 
@@ -78,7 +76,6 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 
         private void ClearAllAchievements()
         {
-            _achievementContext.Criteria.RemoveRange(_achievementContext.Criteria);
             _achievementContext.Categories.RemoveRange(_achievementContext.Categories);
             _achievementContext.Achievements.RemoveRange(_achievementContext.Achievements);
             _achievementContext.SaveChanges();

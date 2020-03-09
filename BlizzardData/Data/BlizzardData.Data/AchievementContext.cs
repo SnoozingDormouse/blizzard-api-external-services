@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BlizzardData.Data
 {
-    public class AchievementContext : DbContext
+    public class AchievementContext : DbContext, IAchievementContext
     {
         public AchievementContext(DbContextOptions<AchievementContext> options)
             : base(options)
-        {}
+        { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

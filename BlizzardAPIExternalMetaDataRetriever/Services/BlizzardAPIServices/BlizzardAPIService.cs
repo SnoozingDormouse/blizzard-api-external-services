@@ -15,12 +15,14 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
         private readonly IHttpClientFactory _clientFactory;
 
         private AccessToken _accessToken;
+        private string _queryURL;
 
-        public BlizzardAPIService(IHttpClientFactory clientFactory, string clientId, string clientSecret)
+        public BlizzardAPIService(IHttpClientFactory clientFactory, string clientId, string clientSecret, string queryURL)
         {
             _clientFactory = clientFactory;
             _clientId = clientId;
             _clientSecret = clientSecret;
+            _queryURL = queryURL;
         }
 
         public string GetBlizzardAPIResponseAsJson(string apiPath)
@@ -30,7 +32,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
                 _accessToken = GetValidAccessTokenFromBlizzard().Result;
             }
 
-            var apiURL = String.Format("https://eu.api.blizzard.com/{0}?namespace=static-eu&locale=en_GB&access_token={1}", 
+            var apiURL = String.Format(_queryURL, 
                 apiPath,
                 _accessToken.Token);
 

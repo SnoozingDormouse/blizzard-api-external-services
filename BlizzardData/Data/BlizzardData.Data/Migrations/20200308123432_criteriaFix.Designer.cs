@@ -4,14 +4,16 @@ using BlizzardData.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BlizzardData.Data.Migrations
 {
     [DbContext(typeof(AchievementContext))]
-    partial class AchievementContextModelSnapshot : ModelSnapshot
+    [Migration("20200308123432_criteriaFix")]
+    partial class criteriaFix
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -68,16 +70,16 @@ namespace BlizzardData.Data.Migrations
                     b.Property<int>("Id")
                         .HasColumnType("int");
 
-                    b.Property<int>("AchievementId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Amount")
                         .HasColumnType("int");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("BlizzardDescription")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ParentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RootId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

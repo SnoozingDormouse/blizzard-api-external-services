@@ -1,6 +1,6 @@
 ﻿namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 {
-    public interface IAchievementService
+    public interface ICriteriaService
     {
         string UpdateAll();
     }
