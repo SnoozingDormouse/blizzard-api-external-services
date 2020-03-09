@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
 {
     public interface IBlizzardAPIService
     {
-        string GetBlizzardGameDataAPIResponseAsJson(string apiPath);
-        string GetBlizzardDefaultProfileAPIResponseAsJson(string apiPath);
-        string GetBlizzardProfileAPIResponseAsJson(string apiPath, string realm, string character);
+        Task<string> GetBlizzardGameDataAPIResponseAsJsonAsync(string apiPath);
+        Task<string> GetBlizzardDefaultProfileAPIResponseAsJsonAsync(string apiPath);
+        Task<string> GetBlizzardProfileAPIResponseAsJsonAsync(string apiPath, string realm, string character);
     }
 }

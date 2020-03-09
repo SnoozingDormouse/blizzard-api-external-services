@@ -36,24 +36,24 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
             _tokenURL = configuration["Battlenet:TokenURL"];
         }
 
-        public string GetBlizzardGameDataAPIResponseAsJson(string apiPath)
+        public async Task<string> GetBlizzardGameDataAPIResponseAsJsonAsync(string apiPath)
         {
-            var url = String.Format(_gameDataQueryURL, apiPath, "{1}");
-            return GetBlizzardAPIResponseAsJson(url);
+            var url = String.Format(_gameDataQueryURL, apiPath, "{0}");
+            return await GetBlizzardAPIResponseAsJsonAsync(url);
         }
 
-        public string GetBlizzardDefaultProfileAPIResponseAsJson(string apiPath)
+        public async Task<string> GetBlizzardDefaultProfileAPIResponseAsJsonAsync(string apiPath)
         {
-            return GetBlizzardProfileAPIResponseAsJson(apiPath, _referenceRealm, _referenceCharacter);
+            return await GetBlizzardProfileAPIResponseAsJsonAsync(apiPath, _referenceRealm, _referenceCharacter);
         }
 
-        public string GetBlizzardProfileAPIResponseAsJson(string apiPath, string realm, string character)
+        public async Task<string> GetBlizzardProfileAPIResponseAsJsonAsync(string apiPath, string realm, string character)
         {
-            var url = String.Format(_profileQueryURL, realm, character, apiPath, "{1}");
-            return GetBlizzardAPIResponseAsJson(url);
+            var url = String.Format(_profileQueryURL, realm, character, apiPath, "{0}");
+            return await GetBlizzardAPIResponseAsJsonAsync(url);
         }
 
-        private string GetBlizzardAPIResponseAsJson(string queryURL)
+        private async Task<string> GetBlizzardAPIResponseAsJsonAsync(string queryURL)
         {
             if (!ValidAccessToken())
             {
@@ -62,7 +62,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
 
             var apiURL = String.Format(queryURL, _accessToken.Token);
 
-            return GetBlizzardAPIInfoAsync(apiURL).Result;
+            return await GetBlizzardAPIInfoAsync(apiURL);
         }
 
         async Task<string> GetBlizzardAPIInfoAsync(string apiURL)

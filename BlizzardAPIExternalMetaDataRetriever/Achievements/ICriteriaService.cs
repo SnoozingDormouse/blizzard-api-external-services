@@ -1,7 +1,9 @@
-﻿namespace BlizzardAPIExternalMetaDataRetriever.Achievements
+﻿using System.Threading.Tasks;
+
+namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 {
     public interface ICriteriaService
     {
-        string UpdateAll();
+        Task<string> UpdateAll();
     }
 }

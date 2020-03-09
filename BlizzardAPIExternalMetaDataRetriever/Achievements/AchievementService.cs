@@ -6,6 +6,7 @@ using BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices;
 using BlizzardData.Data;
 using entities = BlizzardData.Domain.Entities;
 using Newtonsoft.Json;
+using System.Threading.Tasks;
 
 namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 {
@@ -26,22 +27,22 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
             _blizzardAPIService = blizzardAPIService;
         }
 
-        public string UpdateAll()
+        public async Task<string> UpdateAll()
         {
             try
             {
                 ClearAllAchievements();
 
-                var response = _blizzardAPIService.GetBlizzardGameDataAPIResponseAsJson(_indexApiPath);
+                var response = await _blizzardAPIService.GetBlizzardGameDataAPIResponseAsJsonAsync(_indexApiPath);
                 var achievementIds = JsonConvert.DeserializeObject<incoming::AchievementWrapper>(response).achievements.Select(a => a.id);
 
                 var achievements = new List<incoming::Achievement>();
 
-                foreach (int id in achievementIds)
+                foreach(var id in achievementIds)
                 {
-                    response = _blizzardAPIService.GetBlizzardGameDataAPIResponseAsJson(String.Format(_achievementPath, id));
-                    var achievement = JsonConvert.DeserializeObject<incoming::Achievement>(response);
-                    achievements.Add(achievement);
+                   response = await _blizzardAPIService.GetBlizzardGameDataAPIResponseAsJsonAsync(String.Format(_achievementPath, id));
+                   var achievement = JsonConvert.DeserializeObject<incoming::Achievement>(response);
+                   achievements.Add(achievement);
                 }
 
                 var categories = achievements.Select(a => a.category).Where(c => c != null).GroupBy(c => c.Id).Select(i => i.FirstOrDefault()).ToList();
@@ -75,8 +76,8 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 
         private void ClearAllAchievements()
         {
-            _achievementContext.Categories.RemoveRange(_achievementContext.Categories);
-            _achievementContext.Achievements.RemoveRange(_achievementContext.Achievements);
+            _achievementContext.Categories?.RemoveRange(_achievementContext.Categories);
+            _achievementContext.Achievements?.RemoveRange(_achievementContext.Achievements);
             _achievementContext.SaveChanges();
         }
     }

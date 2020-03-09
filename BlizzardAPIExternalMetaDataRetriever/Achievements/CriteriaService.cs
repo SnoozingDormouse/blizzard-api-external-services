@@ -1,16 +1,16 @@
 ﻿using System;
-using System.Linq;
-using System.Net.Http;
-using incoming = BlizzardAPIExternalMetaDataRetriever.Achievements.IncomingModels;
-using BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices;
-using BlizzardData.Data;
-using entities = BlizzardData.Domain.Entities;
-using models = BlizzardData.Models;
-using Newtonsoft.Json;
 using System.Collections.Generic;
-using BlizzardAPIExternalMetaDataRetriever.Achievements.IncomingModels;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
+using BlizzardAPIExternalMetaDataRetriever.Achievements.IncomingModels;
+using BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices;
+using BlizzardData.Data;
+using Newtonsoft.Json;
+using entities = BlizzardData.Domain.Entities;
+using incoming = BlizzardAPIExternalMetaDataRetriever.Achievements.IncomingModels;
+using models = BlizzardData.Models;
 
 namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 {
@@ -29,13 +29,14 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
             _pathURL = "achievements";
         }
 
-        public string UpdateAll()
+        public async Task<string> UpdateAll()
         {
             try
             {
                 ClearCriteria();
 
-                var criteria = FlattenCriteria(RetrieveAchievementsWithCriteria());
+                var achievements = await RetrieveProfileAchievementsWithCriteriaAsync();
+                var criteria = FlattenCriteria(achievements);
 
                 var entityCriteria = criteria.Select(c => (entities::Criteria)c);
                 _achievementContext.Criteria.AddRange(entityCriteria);
@@ -51,9 +52,9 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
             }
         }
 
-        public IEnumerable<incoming::Achievement> RetrieveAchievementsWithCriteria()
+        public async Task<IEnumerable<incoming::Achievement>> RetrieveProfileAchievementsWithCriteriaAsync()
         {
-            var response = _blizzardAPIService.GetBlizzardDefaultProfileAPIResponseAsJson(_pathURL);
+            var response = await _blizzardAPIService.GetBlizzardDefaultProfileAPIResponseAsJsonAsync(_pathURL);
             
             return
                 JsonConvert.DeserializeObject<incoming::AchievementWrapper>(response)
@@ -123,7 +124,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 
         private void ClearCriteria()
         {
-            _achievementContext.Criteria.RemoveRange(_achievementContext.Criteria);
+            _achievementContext.Criteria?.RemoveRange(_achievementContext.Criteria);
             _achievementContext.SaveChanges();
         }
     }

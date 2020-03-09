@@ -31,10 +31,10 @@ namespace BlizzardAPIExternalMetaDataRetriever
 
             services.AddDbContext<AchievementContext>(options => options.UseSqlServer(ConnectionString), ServiceLifetime.Scoped);
 
-            services.AddSingleton<IBlizzardAPIService, BlizzardAPIService>();
+            services.AddScoped<IBlizzardAPIService, BlizzardAPIService>();
 
             services.AddScoped<IAchievementService>(s => new AchievementService(
-                s.GetService<IAchievementContext>(),
+                s.GetService<AchievementContext>(),
                 s.GetService<IBlizzardAPIService>()));
 
             services.AddScoped<ICriteriaService>(s => new CriteriaService(

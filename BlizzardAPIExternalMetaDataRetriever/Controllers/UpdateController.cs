@@ -1,6 +1,7 @@
 ﻿using BlizzardAPIExternalMetaDataRetriever.Achievements;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace BlizzardAPIExternalMetaDataRetriever.Controllers
 {
@@ -23,20 +24,20 @@ namespace BlizzardAPIExternalMetaDataRetriever.Controllers
         [Route("Achievements")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public string UpdateAchievements()
+        public async Task<string> UpdateAchievements()
         {
             // invoke pull from external services
-            return _achievementService.UpdateAll();
+            return await _achievementService.UpdateAll();
         }
 
         [HttpGet]
         [Route("Criteria")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public string UpdateCriteria()
+        public async Task<string> UpdateCriteria()
         {
             // invoke pull from external services
-            return _criteriaService.UpdateAll();
+            return await _criteriaService.UpdateAll();
         }
     }
 }
