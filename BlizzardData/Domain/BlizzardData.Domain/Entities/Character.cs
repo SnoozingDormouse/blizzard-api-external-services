@@ -11,5 +11,6 @@ namespace BlizzardData.Domain.Entities
         public string Realm { get; set; }
         public int Level { get; set; }
         public int BlizzardId { get; set; }
+        public DateTime LastUpdatedDateTime { get; set; }
     }
 }

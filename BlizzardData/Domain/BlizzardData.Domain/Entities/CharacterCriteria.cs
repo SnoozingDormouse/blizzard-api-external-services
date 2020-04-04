@@ -8,7 +8,7 @@ namespace BlizzardData.Domain.Entities
     {
         public int CharacterId { get; set; }
         public int CriteriaId { get; set; }
-        public int Amount { get; set; }
+        public UInt64 Amount { get; set; }
         public bool IsComplete { get; set; }
     }
 }

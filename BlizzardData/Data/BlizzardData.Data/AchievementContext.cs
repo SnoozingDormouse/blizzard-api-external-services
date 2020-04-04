@@ -26,7 +26,7 @@ namespace BlizzardData.Data
             modelBuilder.Entity<CharacterCriteria>()
                 .HasKey(c => new { c.CharacterId, c.CriteriaId });
 
-            modelBuilder.Entity < GoalCriteria>()
+            modelBuilder.Entity <GoalCriteria>()
                 .HasKey(c => new { c.GoalId, c.CriteriaId });
         }
 

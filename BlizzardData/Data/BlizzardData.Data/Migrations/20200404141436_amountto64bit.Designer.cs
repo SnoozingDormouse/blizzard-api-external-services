@@ -4,14 +4,16 @@ using BlizzardData.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BlizzardData.Data.Migrations
 {
     [DbContext(typeof(AchievementContext))]
-    partial class AchievementContextModelSnapshot : ModelSnapshot
+    [Migration("20200404141436_amountto64bit")]
+    partial class amountto64bit
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -98,8 +100,8 @@ namespace BlizzardData.Data.Migrations
                     b.Property<int>("CriteriaId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Amount")
-                        .HasColumnType("decimal(20,0)");
+                    b.Property<long>("Amount")
+                        .HasColumnType("bigint");
 
                     b.Property<bool>("IsComplete")
                         .HasColumnType("bit");
@@ -117,8 +119,8 @@ namespace BlizzardData.Data.Migrations
                     b.Property<int>("AchievementId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Amount")
-                        .HasColumnType("decimal(20,0)");
+                    b.Property<long>("Amount")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
