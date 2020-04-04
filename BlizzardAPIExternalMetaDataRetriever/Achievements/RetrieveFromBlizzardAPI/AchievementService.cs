@@ -12,10 +12,10 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 {
     public class AchievementService : IAchievementService
     {
-        private IAchievementContext _achievementContext;
-        private IBlizzardAPIService _blizzardAPIService;
-        public string _indexApiPath;
-        public string _achievementPath;
+        private readonly IAchievementContext _achievementContext;
+        private readonly IBlizzardAPIService _blizzardAPIService;
+        public readonly string _indexApiPath;
+        public readonly string _achievementPath;
 
         public AchievementService(
             IAchievementContext achievementContext,

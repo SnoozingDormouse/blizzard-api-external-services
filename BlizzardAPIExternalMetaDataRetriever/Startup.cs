@@ -17,7 +17,7 @@ namespace BlizzardAPIExternalMetaDataRetriever
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            ConnectionString = Configuration["Database:ConnectionString"];
+            ConnectionString = Configuration["Database:ConnectionString"] ?? throw new ArgumentNullException("Database:ConnectionString");
         }
 
         public IConfiguration Configuration { get; }

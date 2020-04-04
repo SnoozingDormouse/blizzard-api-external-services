@@ -19,9 +19,9 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
         private readonly IHttpClientFactory _clientFactory;
 
         private AccessToken _accessToken;
-        private string _gameDataQueryURL;
-        private string _profileQueryURL;
-        private string _tokenURL;
+        private readonly string _gameDataQueryURL;
+        private readonly string _profileQueryURL;
+        private readonly string _tokenURL;
 
         public BlizzardAPIService(IHttpClientFactory clientFactory, IConfiguration configuration)
         {
@@ -71,17 +71,15 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
 
             try
             {
-                using (HttpClient httpClient = _clientFactory.CreateClient())
+                using HttpClient httpClient = _clientFactory.CreateClient();
+                HttpResponseMessage response = await httpClient.GetAsync(apiURL);
+                if (response.IsSuccessStatusCode)
                 {
-                    HttpResponseMessage response = await httpClient.GetAsync(apiURL);
-                    if (response.IsSuccessStatusCode)
-                    {
-                        blizzardAPIResponse = await response.Content.ReadAsStringAsync();
-                    }
-                    else
-                    {
-                        throw new HttpRequestException("The server could not be contacted");
-                    }
+                    blizzardAPIResponse = await response.Content.ReadAsStringAsync();
+                }
+                else
+                {
+                    throw new HttpRequestException("The server could not be contacted");
                 }
             }
             catch
@@ -99,36 +97,34 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
 
         private async Task<AccessToken> GetValidAccessTokenFromBlizzard()
         {
-            TokenResponse token = new TokenResponse();
+            TokenResponse token;
 
             try
             {
-                using (HttpClient httpClient = _clientFactory.CreateClient())
-                {
-                    string tokenRequestParameters;
-                    var parameters = new Dictionary<string, string>()
+                using HttpClient httpClient = _clientFactory.CreateClient();
+                string tokenRequestParameters;
+                var parameters = new Dictionary<string, string>()
                             {
                                 { "client_id", _clientId },
                                 { "client_secret", _clientSecret },
                                 { "grant_type", "client_credentials" },
                             };
 
-                    tokenRequestParameters = new FormUrlEncodedContent(parameters).ReadAsStringAsync().Result;
+                tokenRequestParameters = new FormUrlEncodedContent(parameters).ReadAsStringAsync().Result;
 
-                    HttpContent content = new StringContent(tokenRequestParameters, Encoding.UTF8, "application/x-www-form-urlencoded");
+                HttpContent content = new StringContent(tokenRequestParameters, Encoding.UTF8, "application/x-www-form-urlencoded");
 
-                    HttpResponseMessage response = await httpClient.PostAsync(_tokenURL, content);
-                    if (response.IsSuccessStatusCode)
-                    {
-                        token = JsonConvert
-                                .DeserializeObject<TokenResponse>(await response.Content.ReadAsStringAsync());
+                HttpResponseMessage response = await httpClient.PostAsync(_tokenURL, content);
+                if (response.IsSuccessStatusCode)
+                {
+                    token = JsonConvert
+                            .DeserializeObject<TokenResponse>(await response.Content.ReadAsStringAsync());
 
-                        return new AccessToken(token);
-                    }
-                    else
-                    {
-                        throw new HttpRequestException("The server could not be contacted");
-                    }
+                    return new AccessToken(token);
+                }
+                else
+                {
+                    throw new HttpRequestException("The server could not be contacted");
                 }
             }
             catch

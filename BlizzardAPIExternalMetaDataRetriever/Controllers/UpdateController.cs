@@ -1,6 +1,8 @@
 ﻿using BlizzardAPIExternalMetaDataRetriever.Achievements;
+using BlizzardData.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace BlizzardAPIExternalMetaDataRetriever.Controllers
@@ -9,15 +11,16 @@ namespace BlizzardAPIExternalMetaDataRetriever.Controllers
     [ApiController]
     public class UpdateController : ControllerBase
     {
-        private IAchievementService _achievementService;
-        private ICriteriaService _criteriaService;
+        private readonly IAchievementService _achievementService;
+        private readonly RefreshGameDataCriteria _refreshCriteria;
 
         public UpdateController(
+            AchievementContext achievementContext,
             IAchievementService achievementService,
             ICriteriaService criteriaService)
         {
             _achievementService = achievementService;
-            _criteriaService = criteriaService;
+            _refreshCriteria = new RefreshGameDataCriteria(achievementContext, criteriaService);
         }
 
         [HttpGet]
@@ -37,7 +40,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Controllers
         public async Task<string> UpdateCriteria()
         {
             // invoke pull from external services
-            return await _criteriaService.UpdateAll();
+            return await _refreshCriteria.UpdateAll();
         }
     }
 }
