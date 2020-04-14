@@ -1,0 +1,44 @@
+Reputation Faction
+ /data/wow/reputation-faction/{reputationFactionId}
+ 
+ https://eu.api.blizzard.com/data/wow/reputation-faction/2391?namespace=static-eu&locale=en_GB&access_token=USID2zeGm3sA7lfK1hlmEqIrOfGsoS5pms
+ 
+ 
+ {
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/reputation-faction/2391?namespace=static-8.3.0_32861-eu"
+        }
+    },
+    "id": 2391,
+    "name": "Rustbolt Resistance",
+    "description": "The Rustbolt Resistance holds the line against King Mechagon and his evil plans.",
+    "can_paragon": true,
+    "reputation_tiers": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/0?namespace=static-8.3.0_32861-eu"
+        },
+        "id": 0
+    }
+}
+
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/reputation-faction/54?namespace=static-8.3.0_32861-eu"
+        }
+    },
+    "id": 54,
+    "name": "Gnomeregan",
+    "description": "The former denizens of Gnomeregan, now living in New Tinkertown and in league with the Alliance.",
+    "reputation_tiers": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/0?namespace=static-8.3.0_32861-eu"
+        },
+        "id": 0
+    },
+    "player_faction": {
+        "type": "ALLIANCE",
+        "name": "Alliance"
+    }
+}

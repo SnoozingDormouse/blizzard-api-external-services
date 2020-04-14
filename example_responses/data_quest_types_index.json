@@ -1,0 +1,84 @@
+Quest Types Index
+data/wow/quest/type/index
+
+https://eu.api.blizzard.com/data/wow/quest/type/index?namespace=static-eu&locale=en_GB&access_token=EUJTVPzm50C8eXPJ1rRm20fESAJKDo0Em9
+
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/quest/type/?namespace=static-8.3.0_32861-eu"
+        }
+    },
+    "types": [
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/type/1?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Group",
+            "id": 1
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/type/41?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "PvP",
+            "id": 41
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/type/62?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Raid",
+            "id": 62
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/type/81?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dungeon",
+            "id": 81
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/type/83?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Legendary",
+            "id": 83
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/type/85?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Heroic",
+            "id": 85
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/type/88?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Raid (10)",
+            "id": 88
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/type/89?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Raid (25)",
+            "id": 89
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/type/98?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Scenario",
+            "id": 98
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/type/102?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Account",
+            "id": 102
+        }
+    ]
+}

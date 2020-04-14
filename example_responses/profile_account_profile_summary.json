@@ -1,0 +1,2544 @@
+Account Profile Summary
+ /profile/user/wow
+ 
+ Returns a profile summary for an account.
+
+Because this endpoint provides data about the current logged-in user's World of Warcraft account, it requires an access token with the wow.profile scope acquired via the Authorization Code Flow.
+
+https://eu.api.blizzard.com/profile/user/wow?namespace=profile-eu&locale=en_GB&access_token=USID2zeGm3sA7lfK1hlmEqIrOfGsoS5pms
+
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/profile/user/wow?namespace=profile-eu"
+        },
+        "user": {
+            "href": "https://eu.api.blizzard.com/profile/user"
+        },
+        "profile": {
+            "href": "https://eu.api.blizzard.com/profile/user/wow?namespace=profile-eu"
+        }
+    },
+    "id": 2159704,
+    "wow_accounts": [
+        {
+            "id": 3301873,
+            "characters": [
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/darwhin?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-42694183?namespace=profile-eu"
+                    },
+                    "name": "Darwhin",
+                    "id": 42694183,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/3?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Hunter",
+                        "id": 3
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/3?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Dwarf",
+                        "id": 3
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 99
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/sagemore?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-58120669?namespace=profile-eu"
+                    },
+                    "name": "Sagemore",
+                    "id": 58120669,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Shaman",
+                        "id": 7
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/3?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Dwarf",
+                        "id": 3
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 50
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/sneakpast?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-120967726?namespace=profile-eu"
+                    },
+                    "name": "Sneakpast",
+                    "id": 120967726,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/4?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Rogue",
+                        "id": 4
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/9?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Goblin",
+                        "id": 9
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "HORDE",
+                        "name": "Horde"
+                    },
+                    "level": 14
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/steamwheedle-cartel/khoria?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1117-127563342?namespace=profile-eu"
+                    },
+                    "name": "Khoria",
+                    "id": 127563342,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1117?namespace=dynamic-eu"
+                        },
+                        "name": "Steamwheedle Cartel",
+                        "id": 1117,
+                        "slug": "steamwheedle-cartel"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warrior",
+                        "id": 1
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 27
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khorylle?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-133687984?namespace=profile-eu"
+                    },
+                    "name": "Khorylle",
+                    "id": 133687984,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/5?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Priest",
+                        "id": 5
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 120
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-133688058?namespace=profile-eu"
+                    },
+                    "name": "Khoria",
+                    "id": 133688058,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warrior",
+                        "id": 1
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 120
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/flyte?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-134226390?namespace=profile-eu"
+                    },
+                    "name": "Flyte",
+                    "id": 134226390,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/4?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Rogue",
+                        "id": 4
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 120
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khorice?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-138378622?namespace=profile-eu"
+                    },
+                    "name": "Khorice",
+                    "id": 138378622,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/8?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Mage",
+                        "id": 8
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 120
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/deathsdor?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-138379212?namespace=profile-eu"
+                    },
+                    "name": "Deathsdor",
+                    "id": 138379212,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/6?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Death Knight",
+                        "id": 6
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 120
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/khoff?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-138708881?namespace=profile-eu"
+                    },
+                    "name": "Khoff",
+                    "id": 138708881,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/6?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Death Knight",
+                        "id": 6
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/9?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Goblin",
+                        "id": 9
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "HORDE",
+                        "name": "Horde"
+                    },
+                    "level": 110
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khorymph?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-138708884?namespace=profile-eu"
+                    },
+                    "name": "Khorymph",
+                    "id": 138708884,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/10?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Monk",
+                        "id": 10
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 116
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoruption?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-138708994?namespace=profile-eu"
+                    },
+                    "name": "Khoruption",
+                    "id": 138708994,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/9?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warlock",
+                        "id": 9
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 110
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/illidor?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-138876581?namespace=profile-eu"
+                    },
+                    "name": "Illidor",
+                    "id": 138876581,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/12?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Demon Hunter",
+                        "id": 12
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/10?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Blood Elf",
+                        "id": 10
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "HORDE",
+                        "name": "Horde"
+                    },
+                    "level": 106
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/sagepaws?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-140793191?namespace=profile-eu"
+                    },
+                    "name": "Sagepaws",
+                    "id": 140793191,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/11?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Druid",
+                        "id": 11
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/4?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Night Elf",
+                        "id": 4
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 110
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/sagehorn?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-141483268?namespace=profile-eu"
+                    },
+                    "name": "Sagehorn",
+                    "id": 141483268,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/11?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Druid",
+                        "id": 11
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/28?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Highmountain Tauren",
+                        "id": 28
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "HORDE",
+                        "name": "Horde"
+                    },
+                    "level": 30
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/sagestorm?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-141483292?namespace=profile-eu"
+                    },
+                    "name": "Sagestorm",
+                    "id": 141483292,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Shaman",
+                        "id": 7
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/25?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Pandaren",
+                        "id": 25
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 110
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/sagelight?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-142918737?namespace=profile-eu"
+                    },
+                    "name": "Sagelight",
+                    "id": 142918737,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/2?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Paladin",
+                        "id": 2
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/10?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Blood Elf",
+                        "id": 10
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "HORDE",
+                        "name": "Horde"
+                    },
+                    "level": 110
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/sagemore?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-143115084?namespace=profile-eu"
+                    },
+                    "name": "Sagemore",
+                    "id": 143115084,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Shaman",
+                        "id": 7
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/24?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Pandaren",
+                        "id": 24
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "NEUTRAL",
+                        "name": "Neutral"
+                    },
+                    "level": 11
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/steamwheedle-cartel/nutmeg?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1117-144970543?namespace=profile-eu"
+                    },
+                    "name": "Nutmeg",
+                    "id": 144970543,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1117?namespace=dynamic-eu"
+                        },
+                        "name": "Steamwheedle Cartel",
+                        "id": 1117,
+                        "slug": "steamwheedle-cartel"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warrior",
+                        "id": 1
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/25?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Pandaren",
+                        "id": 25
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 18
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/steamwheedle-cartel/pennie?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1117-145025120?namespace=profile-eu"
+                    },
+                    "name": "Pennie",
+                    "id": 145025120,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1117?namespace=dynamic-eu"
+                        },
+                        "name": "Steamwheedle Cartel",
+                        "id": 1117,
+                        "slug": "steamwheedle-cartel"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warrior",
+                        "id": 1
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 2
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/dor?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-155358674?namespace=profile-eu"
+                    },
+                    "name": "Dor",
+                    "id": 155358674,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/3?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Hunter",
+                        "id": 3
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 120
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/ashpaw?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-157391208?namespace=profile-eu"
+                    },
+                    "name": "Ashpaw",
+                    "id": 157391208,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/11?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Druid",
+                        "id": 11
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/32?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Kul Tiran",
+                        "id": 32
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 20
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/mechakhoria?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-158290358?namespace=profile-eu"
+                    },
+                    "name": "Mechakhoria",
+                    "id": 158290358,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warrior",
+                        "id": 1
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/37?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Mechagnome",
+                        "id": 37
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/mechakhoryll?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-158290390?namespace=profile-eu"
+                    },
+                    "name": "Mechakhoryll",
+                    "id": 158290390,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/5?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Priest",
+                        "id": 5
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/37?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Mechagnome",
+                        "id": 37
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 20
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/mechador?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-158290432?namespace=profile-eu"
+                    },
+                    "name": "Mechador",
+                    "id": 158290432,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/3?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Hunter",
+                        "id": 3
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/37?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Mechagnome",
+                        "id": 37
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/mechakhorice?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-158290662?namespace=profile-eu"
+                    },
+                    "name": "Mechakhorice",
+                    "id": 158290662,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/8?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Mage",
+                        "id": 8
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/37?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Mechagnome",
+                        "id": 37
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/mechaflyte?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-158290687?namespace=profile-eu"
+                    },
+                    "name": "Mechaflyte",
+                    "id": 158290687,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/4?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Rogue",
+                        "id": 4
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/37?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Mechagnome",
+                        "id": 37
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/mechadeath?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-158290725?namespace=profile-eu"
+                    },
+                    "name": "Mechadeath",
+                    "id": 158290725,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/6?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Death Knight",
+                        "id": 6
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/37?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Mechagnome",
+                        "id": 37
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/mechakorymph?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-158290767?namespace=profile-eu"
+                    },
+                    "name": "Mechakorymph",
+                    "id": 158290767,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/10?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Monk",
+                        "id": 10
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/37?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Mechagnome",
+                        "id": 37
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/mechakhorupt?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-158290787?namespace=profile-eu"
+                    },
+                    "name": "Mechakhorupt",
+                    "id": 158290787,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/9?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warlock",
+                        "id": 9
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/37?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Mechagnome",
+                        "id": 37
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/darkspear/khorylle?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1389-144247636?namespace=profile-eu"
+                    },
+                    "name": "Khorylle",
+                    "id": 144247636,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1389?namespace=dynamic-eu"
+                        },
+                        "name": "Darkspear",
+                        "id": 1389,
+                        "slug": "darkspear"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/5?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Priest",
+                        "id": 5
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 120
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/darkspear/khoressa?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1389-151633554?namespace=profile-eu"
+                    },
+                    "name": "Khoressa",
+                    "id": 151633554,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1389?namespace=dynamic-eu"
+                        },
+                        "name": "Darkspear",
+                        "id": 1389,
+                        "slug": "darkspear"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/2?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Paladin",
+                        "id": 2
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/30?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Lightforged Draenei",
+                        "id": 30
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 24
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/darkspear/dorwyn?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1389-157415270?namespace=profile-eu"
+                    },
+                    "name": "Dorwyn",
+                    "id": 157415270,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1389?namespace=dynamic-eu"
+                        },
+                        "name": "Darkspear",
+                        "id": 1389,
+                        "slug": "darkspear"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/3?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Hunter",
+                        "id": 3
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 33
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/saurfang/khoria?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1314-157476520?namespace=profile-eu"
+                    },
+                    "name": "Khoria",
+                    "id": 157476520,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1314?namespace=dynamic-eu"
+                        },
+                        "name": "Saurfang",
+                        "id": 1314,
+                        "slug": "saurfang"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warrior",
+                        "id": 1
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 20
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/saurfang/flyte?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1314-157476524?namespace=profile-eu"
+                    },
+                    "name": "Flyte",
+                    "id": 157476524,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1314?namespace=dynamic-eu"
+                        },
+                        "name": "Saurfang",
+                        "id": 1314,
+                        "slug": "saurfang"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/4?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Rogue",
+                        "id": 4
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 26
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/saurfang/khorylle?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1314-157476528?namespace=profile-eu"
+                    },
+                    "name": "Khorylle",
+                    "id": 157476528,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1314?namespace=dynamic-eu"
+                        },
+                        "name": "Saurfang",
+                        "id": 1314,
+                        "slug": "saurfang"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/5?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Priest",
+                        "id": 5
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 3
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/saurfang/deathsdor?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1314-157476531?namespace=profile-eu"
+                    },
+                    "name": "Deathsdor",
+                    "id": 157476531,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1314?namespace=dynamic-eu"
+                        },
+                        "name": "Saurfang",
+                        "id": 1314,
+                        "slug": "saurfang"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/6?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Death Knight",
+                        "id": 6
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 67
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/saurfang/khoras?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1314-157480518?namespace=profile-eu"
+                    },
+                    "name": "Khoras",
+                    "id": 157480518,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1314?namespace=dynamic-eu"
+                        },
+                        "name": "Saurfang",
+                        "id": 1314,
+                        "slug": "saurfang"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/8?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Mage",
+                        "id": 8
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 2
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/saurfang/khoruption?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1314-157480526?namespace=profile-eu"
+                    },
+                    "name": "Khoruption",
+                    "id": 157480526,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1314?namespace=dynamic-eu"
+                        },
+                        "name": "Saurfang",
+                        "id": 1314,
+                        "slug": "saurfang"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/9?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warlock",
+                        "id": 9
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 3
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/saurfang/dorym?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1314-157480550?namespace=profile-eu"
+                    },
+                    "name": "Dorym",
+                    "id": 157480550,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1314?namespace=dynamic-eu"
+                        },
+                        "name": "Saurfang",
+                        "id": 1314,
+                        "slug": "saurfang"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/10?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Monk",
+                        "id": 10
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 63
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/saurfang/doramas?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1314-157994954?namespace=profile-eu"
+                    },
+                    "name": "Doramas",
+                    "id": 157994954,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1314?namespace=dynamic-eu"
+                        },
+                        "name": "Saurfang",
+                        "id": 1314,
+                        "slug": "saurfang"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/12?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Demon Hunter",
+                        "id": 12
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/4?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Night Elf",
+                        "id": 4
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 120
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/saurfang/sageleaf?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1314-157995024?namespace=profile-eu"
+                    },
+                    "name": "Sageleaf",
+                    "id": 157995024,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1314?namespace=dynamic-eu"
+                        },
+                        "name": "Saurfang",
+                        "id": 1314,
+                        "slug": "saurfang"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/11?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Druid",
+                        "id": 11
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/4?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Night Elf",
+                        "id": 4
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 1
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/saurfang/sagemore?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1314-157995028?namespace=profile-eu"
+                    },
+                    "name": "Sagemore",
+                    "id": 157995028,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1314?namespace=dynamic-eu"
+                        },
+                        "name": "Saurfang",
+                        "id": 1314,
+                        "slug": "saurfang"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Shaman",
+                        "id": 7
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/3?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Dwarf",
+                        "id": 3
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 1
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/saurfang/eudoria?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1314-157995048?namespace=profile-eu"
+                    },
+                    "name": "Eudoria",
+                    "id": 157995048,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1314?namespace=dynamic-eu"
+                        },
+                        "name": "Saurfang",
+                        "id": 1314,
+                        "slug": "saurfang"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/2?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Paladin",
+                        "id": 2
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/11?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Draenei",
+                        "id": 11
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 120
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/quelthalas/khonquer?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/623-109453804?namespace=profile-eu"
+                    },
+                    "name": "Khonquer",
+                    "id": 109453804,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/623?namespace=dynamic-eu"
+                        },
+                        "name": "Quel'Thalas",
+                        "id": 623,
+                        "slug": "quelthalas"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/10?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Monk",
+                        "id": 10
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 70
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/les-clairvoyants/areli?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1626-73316835?namespace=profile-eu"
+                    },
+                    "name": "Areli",
+                    "id": 73316835,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1626?namespace=dynamic-eu"
+                        },
+                        "name": "Les Clairvoyants",
+                        "id": 1626,
+                        "slug": "les-clairvoyants"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/3?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Hunter",
+                        "id": 3
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/22?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Worgen",
+                        "id": 22
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 4
+                }
+            ]
+        },
+        {
+            "id": 40609920,
+            "characters": [
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/tensra?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-63416975?namespace=profile-eu"
+                    },
+                    "name": "Tensra",
+                    "id": 63416975,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/9?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warlock",
+                        "id": 9
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "MALE",
+                        "name": "Male"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 24
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/boardoom?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-63901509?namespace=profile-eu"
+                    },
+                    "name": "Boardoom",
+                    "id": 63901509,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warrior",
+                        "id": 1
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "MALE",
+                        "name": "Male"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 2
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/branchling?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-64753813?namespace=profile-eu"
+                    },
+                    "name": "Branchling",
+                    "id": 64753813,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/11?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Druid",
+                        "id": 11
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/4?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Night Elf",
+                        "id": 4
+                    },
+                    "gender": {
+                        "type": "MALE",
+                        "name": "Male"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 1
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/steamwheedle-cartel/fzservegnome?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1117-128151004?namespace=profile-eu"
+                    },
+                    "name": "Fzservegnome",
+                    "id": 128151004,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1117?namespace=dynamic-eu"
+                        },
+                        "name": "Steamwheedle Cartel",
+                        "id": 1117,
+                        "slug": "steamwheedle-cartel"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/3?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Hunter",
+                        "id": 3
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 1
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/dorfizzle?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-133278740?namespace=profile-eu"
+                    },
+                    "name": "Dorfizzle",
+                    "id": 133278740,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warrior",
+                        "id": 1
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 1
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/dorgrizzle?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-133278741?namespace=profile-eu"
+                    },
+                    "name": "Dorgrizzle",
+                    "id": 133278741,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/3?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Hunter",
+                        "id": 3
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/dorsnick?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-133278742?namespace=profile-eu"
+                    },
+                    "name": "Dorsnick",
+                    "id": 133278742,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/4?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Rogue",
+                        "id": 4
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/dorvizz?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-133278745?namespace=profile-eu"
+                    },
+                    "name": "Dorvizz",
+                    "id": 133278745,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/5?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Priest",
+                        "id": 5
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/doribik?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-133278746?namespace=profile-eu"
+                    },
+                    "name": "Doribik",
+                    "id": 133278746,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/8?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Mage",
+                        "id": 8
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/dorathink?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-133278748?namespace=profile-eu"
+                    },
+                    "name": "Dorathink",
+                    "id": 133278748,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/9?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warlock",
+                        "id": 9
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/dorthunk?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-133278749?namespace=profile-eu"
+                    },
+                    "name": "Dorthunk",
+                    "id": 133278749,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/10?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Monk",
+                        "id": 10
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Gnome",
+                        "id": 7
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/dorhilda?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-133278753?namespace=profile-eu"
+                    },
+                    "name": "Dorhilda",
+                    "id": 133278753,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Shaman",
+                        "id": 7
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/3?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Dwarf",
+                        "id": 3
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/dorleaf?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-133278772?namespace=profile-eu"
+                    },
+                    "name": "Dorleaf",
+                    "id": 133278772,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/11?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Druid",
+                        "id": 11
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/4?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Night Elf",
+                        "id": 4
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                },
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/the-shatar/dormena?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1595-133278786?namespace=profile-eu"
+                    },
+                    "name": "Dormena",
+                    "id": 133278786,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1595?namespace=dynamic-eu"
+                        },
+                        "name": "The Sha'tar",
+                        "id": 1595,
+                        "slug": "the-shatar"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/2?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Paladin",
+                        "id": 2
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/11?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Draenei",
+                        "id": 11
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 0
+                }
+            ]
+        },
+        {
+            "id": 36634242,
+            "characters": [
+                {
+                    "character": {
+                        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/delvinia?namespace=profile-eu"
+                    },
+                    "protected_character": {
+                        "href": "https://eu.api.blizzard.com/profile/user/wow/protected-character/1085-67294073?namespace=profile-eu"
+                    },
+                    "name": "Delvinia",
+                    "id": 67294073,
+                    "realm": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+                        },
+                        "name": "Moonglade",
+                        "id": 1085,
+                        "slug": "moonglade"
+                    },
+                    "playable_class": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Shaman",
+                        "id": 7
+                    },
+                    "playable_race": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/playable-race/3?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Dwarf",
+                        "id": 3
+                    },
+                    "gender": {
+                        "type": "FEMALE",
+                        "name": "Female"
+                    },
+                    "faction": {
+                        "type": "ALLIANCE",
+                        "name": "Alliance"
+                    },
+                    "level": 1
+                }
+            ]
+        }
+    ],
+    "collections": {
+        "href": "https://eu.api.blizzard.com/profile/user/wow/collections?namespace=profile-eu"
+    }
+}

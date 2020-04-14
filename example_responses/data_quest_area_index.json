@@ -1,0 +1,2261 @@
+Quest Area Index
+data/wow/quest/area/index
+
+https://eu.api.blizzard.com/data/wow/quest/area/index?namespace=static-eu&locale=en_GB&access_token=EUJTVPzm50C8eXPJ1rRm20fESAJKDo0Em9
+
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/quest/area/?namespace=static-8.3.0_32861-eu"
+        }
+    },
+    "areas": [
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dun Morogh",
+            "id": 1
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Badlands",
+            "id": 3
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Blasted Lands",
+            "id": 4
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Swamp of Sorrows",
+            "id": 8
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Duskwood",
+            "id": 10
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/11?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Wetlands",
+            "id": 11
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/12?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Elwynn Forest",
+            "id": 12
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/14?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Durotar",
+            "id": 14
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/15?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dustwallow Marsh",
+            "id": 15
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/16?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Azshara",
+            "id": 16
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/17?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Northern Barrens",
+            "id": 17
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/28?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Western Plaguelands",
+            "id": 28
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/33?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Northern Stranglethorn",
+            "id": 33
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/38?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Loch Modan",
+            "id": 38
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/40?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Westfall",
+            "id": 40
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/41?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Deadwind Pass",
+            "id": 41
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/44?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Redridge Mountains",
+            "id": 44
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/45?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Arathi Highlands",
+            "id": 45
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/46?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Burning Steppes",
+            "id": 46
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/47?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Hinterlands",
+            "id": 47
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/51?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Searing Gorge",
+            "id": 51
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/65?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dragonblight",
+            "id": 65
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/66?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Zul'Drak",
+            "id": 66
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/67?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Storm Peaks",
+            "id": 67
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/85?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tirisfal Glades",
+            "id": 85
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/130?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Silverpine Forest",
+            "id": 130
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/139?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Eastern Plaguelands",
+            "id": 139
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/141?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Teldrassil",
+            "id": 141
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/148?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Darkshore",
+            "id": 148
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/206?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Utgarde Keep",
+            "id": 206
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/209?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Shadowfang Keep",
+            "id": 209
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/210?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Icecrown",
+            "id": 210
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/215?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Mulgore",
+            "id": 215
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/267?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Hillsbrad Foothills",
+            "id": 267
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/331?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ashenvale",
+            "id": 331
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/357?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Feralas",
+            "id": 357
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/361?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Felwood",
+            "id": 361
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/394?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Grizzly Hills",
+            "id": 394
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/400?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Thousand Needles",
+            "id": 400
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/405?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Desolace",
+            "id": 405
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/406?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Stonetalon Mountains",
+            "id": 406
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/440?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tanaris",
+            "id": 440
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/490?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Un'Goro Crater",
+            "id": 490
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/491?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Razorfen Kraul",
+            "id": 491
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/493?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Moonglade",
+            "id": 493
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/495?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Howling Fjord",
+            "id": 495
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/510?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Dragonmurk",
+            "id": 510
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/616?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Mount Hyjal",
+            "id": 616
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/618?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Winterspring",
+            "id": 618
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/717?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Stockade",
+            "id": 717
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/718?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Wailing Caverns",
+            "id": 718
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/719?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Blackfathom Deeps",
+            "id": 719
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/721?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Gnomeregan",
+            "id": 721
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/722?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Razorfen Downs",
+            "id": 722
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/796?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Scarlet Monastery",
+            "id": 796
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1176?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Zul'Farrak",
+            "id": 1176
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1196?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Utgarde Pinnacle",
+            "id": 1196
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1337?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Uldaman",
+            "id": 1337
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1377?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Silithus",
+            "id": 1377
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1477?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Temple of Atal'Hakkar",
+            "id": 1477
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1497?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Undercity",
+            "id": 1497
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1519?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Stormwind City",
+            "id": 1519
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1537?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ironforge",
+            "id": 1537
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1581?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Deadmines",
+            "id": 1581
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1583?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Blackrock Spire",
+            "id": 1583
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1584?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Blackrock Depths",
+            "id": 1584
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1637?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Orgrimmar",
+            "id": 1637
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1638?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Thunder Bluff",
+            "id": 1638
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1657?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Darnassus",
+            "id": 1657
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1941?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Caverns of Time",
+            "id": 1941
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/1977?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Zul'Gurub",
+            "id": 1977
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/2017?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Stratholme",
+            "id": 2017
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/2100?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Maraudon",
+            "id": 2100
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/2257?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Deeprun Tram",
+            "id": 2257
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/2366?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Black Morass",
+            "id": 2366
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/2367?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Old Hillsbrad Foothills",
+            "id": 2367
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/2437?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ragefire Chasm",
+            "id": 2437
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/2557?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dire Maul",
+            "id": 2557
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/2597?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Alterac Valley",
+            "id": 2597
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/2717?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Molten Core",
+            "id": 2717
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3358?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Arathi Basin",
+            "id": 3358
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3428?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ahn'Qiraj",
+            "id": 3428
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3429?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ruins of Ahn'Qiraj",
+            "id": 3429
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3430?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Eversong Woods",
+            "id": 3430
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3433?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ghostlands",
+            "id": 3433
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3456?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Naxxramas",
+            "id": 3456
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3457?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Karazhan",
+            "id": 3457
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3483?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Hellfire Peninsula",
+            "id": 3483
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3487?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Silvermoon City",
+            "id": 3487
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3518?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Nagrand",
+            "id": 3518
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3519?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Terokkar Forest",
+            "id": 3519
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3520?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Shadowmoon Valley",
+            "id": 3520
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3521?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Zangarmarsh",
+            "id": 3521
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3522?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Blade's Edge Mountains",
+            "id": 3522
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3523?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Netherstorm",
+            "id": 3523
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3524?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Azuremyst Isle",
+            "id": 3524
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3525?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Bloodmyst Isle",
+            "id": 3525
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3537?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Borean Tundra",
+            "id": 3537
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3562?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Hellfire Ramparts",
+            "id": 3562
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3606?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Hyjal Summit",
+            "id": 3606
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3703?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Shattrath City",
+            "id": 3703
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3711?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sholazar Basin",
+            "id": 3711
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3713?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Blood Furnace",
+            "id": 3713
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3714?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Shattered Halls",
+            "id": 3714
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3715?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Steamvault",
+            "id": 3715
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3716?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Underbog",
+            "id": 3716
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3717?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Slave Pens",
+            "id": 3717
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3789?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Shadow Labyrinth",
+            "id": 3789
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3790?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Auchenai Crypts",
+            "id": 3790
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3791?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sethekk Halls",
+            "id": 3791
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3792?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Mana-Tombs",
+            "id": 3792
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3805?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Zul'Aman",
+            "id": 3805
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3836?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Magtheridon's Lair",
+            "id": 3836
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3845?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tempest Keep",
+            "id": 3845
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3847?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Botanica",
+            "id": 3847
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3848?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Arcatraz",
+            "id": 3848
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3849?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Mechanar",
+            "id": 3849
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/3959?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Black Temple",
+            "id": 3959
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4075?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sunwell Plateau",
+            "id": 4075
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4080?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Isle of Quel'Danas",
+            "id": 4080
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4100?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Culling of Stratholme",
+            "id": 4100
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4131?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Magisters' Terrace",
+            "id": 4131
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4196?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Drak'Tharon Keep",
+            "id": 4196
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4197?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Wintergrasp",
+            "id": 4197
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4228?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Oculus",
+            "id": 4228
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4264?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Halls of Stone",
+            "id": 4264
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4265?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Nexus",
+            "id": 4265
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4272?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Halls of Lightning",
+            "id": 4272
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4273?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ulduar",
+            "id": 4273
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4277?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Azjol-Nerub",
+            "id": 4277
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4395?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dalaran",
+            "id": 4395
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4411?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Stormwind Harbor",
+            "id": 4411
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4415?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Violet Hold",
+            "id": 4415
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4416?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Gundrak",
+            "id": 4416
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4493?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Obsidian Sanctum",
+            "id": 4493
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4494?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ahn'kahet: The Old Kingdom",
+            "id": 4494
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4500?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Eye of Eternity",
+            "id": 4500
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4706?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ruins of Gilneas",
+            "id": 4706
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4709?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Southern Barrens",
+            "id": 4709
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4714?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Gilneas",
+            "id": 4714
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4720?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Lost Isles",
+            "id": 4720
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4722?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Trial of the Crusader",
+            "id": 4722
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4723?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Trial of the Champion",
+            "id": 4723
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4737?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Kezan",
+            "id": 4737
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4755?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Gilneas City",
+            "id": 4755
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4809?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Forge of Souls",
+            "id": 4809
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4812?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Icecrown Citadel",
+            "id": 4812
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4813?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Pit of Saron",
+            "id": 4813
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4815?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Kelp'thar Forest",
+            "id": 4815
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4820?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Halls of Reflection",
+            "id": 4820
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4922?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Twilight Highlands",
+            "id": 4922
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4926?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Blackrock Caverns",
+            "id": 4926
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4945?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Halls of Origination",
+            "id": 4945
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4950?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Grim Batol",
+            "id": 4950
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/4987?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Ruby Sanctum",
+            "id": 4987
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5004?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Throne of the Tides",
+            "id": 5004
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5034?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Uldum",
+            "id": 5034
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5035?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Vortex Pinnacle",
+            "id": 5035
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5042?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Deepholm",
+            "id": 5042
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5088?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Stonecore",
+            "id": 5088
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5095?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tol Barad",
+            "id": 5095
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5144?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Shimmering Expanse",
+            "id": 5144
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5145?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Abyssal Depths",
+            "id": 5145
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5146?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Vashj'ir",
+            "id": 5146
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5287?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Cape of Stranglethorn",
+            "id": 5287
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5389?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tol Barad Peninsula",
+            "id": 5389
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5396?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Lost City of the Tol'vir",
+            "id": 5396
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5723?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Firelands",
+            "id": 5723
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5733?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Molten Front",
+            "id": 5733
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5736?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Wandering Isle",
+            "id": 5736
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5785?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Jade Forest",
+            "id": 5785
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5788?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Well of Eternity",
+            "id": 5788
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5789?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "End Time",
+            "id": 5789
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5805?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Valley of the Four Winds",
+            "id": 5805
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5840?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Vale of Eternal Blossoms",
+            "id": 5840
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5841?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Kun-Lai Summit",
+            "id": 5841
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5842?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Townlong Steppes",
+            "id": 5842
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5844?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Hour of Twilight",
+            "id": 5844
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5861?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Darkmoon Island",
+            "id": 5861
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5918?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Shado-Pan Monastery",
+            "id": 5918
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5956?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Temple of the Jade Serpent",
+            "id": 5956
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5963?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Stormstout Brewery",
+            "id": 5963
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/5976?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Gate of the Setting Sun",
+            "id": 5976
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6006?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Veiled Stair",
+            "id": 6006
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6052?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Scarlet Halls",
+            "id": 6052
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6066?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Scholomance",
+            "id": 6066
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6109?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Scarlet Monastery",
+            "id": 6109
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6134?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Krasarang Wilds",
+            "id": 6134
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6138?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dread Wastes",
+            "id": 6138
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6170?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Northshire",
+            "id": 6170
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6176?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Coldridge Valley",
+            "id": 6176
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6182?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Mogu'shan Palace",
+            "id": 6182
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6214?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Siege of Niuzao Temple",
+            "id": 6214
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6309?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Unga Ingoo",
+            "id": 6309
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6426?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Brewmoon Festival",
+            "id": 6426
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6450?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Shadowglen",
+            "id": 6450
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6451?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Valley of Trials",
+            "id": 6451
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6452?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Camp Narache",
+            "id": 6452
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6453?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Echo Isles",
+            "id": 6453
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6454?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Deathknell",
+            "id": 6454
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6455?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sunstrider Isle",
+            "id": 6455
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6456?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ammen Vale",
+            "id": 6456
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6457?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "New Tinkertown",
+            "id": 6457
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6507?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Isle of Thunder",
+            "id": 6507
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6622?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Throne of Thunder",
+            "id": 6622
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6661?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Isle of Giants",
+            "id": 6661
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6662?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Talador",
+            "id": 6662
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6719?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Shadowmoon Valley",
+            "id": 6719
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6720?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Frostfire Ridge",
+            "id": 6720
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6721?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Gorgrond",
+            "id": 6721
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6722?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Spires of Arak",
+            "id": 6722
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6723?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tanaan Jungle",
+            "id": 6723
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6738?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Siege of Orgrimmar",
+            "id": 6738
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6755?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Nagrand",
+            "id": 6755
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6757?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Timeless Isle",
+            "id": 6757
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6812?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Greenstone Village",
+            "id": 6812
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6874?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Bloodmaul Slag Mines",
+            "id": 6874
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6912?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Auchindoun",
+            "id": 6912
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6932?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Shadowmoon Burial Grounds",
+            "id": 6932
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6941?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ashran",
+            "id": 6941
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6951?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Iron Docks",
+            "id": 6951
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6960?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Frostfire Ridge",
+            "id": 6960
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6967?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Blackrock Foundry",
+            "id": 6967
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6984?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Grimrail Depot",
+            "id": 6984
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6988?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Skyreach",
+            "id": 6988
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/6996?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Highmaul",
+            "id": 6996
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7025?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tanaan Jungle",
+            "id": 7025
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7109?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Everbloom",
+            "id": 7109
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7307?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Upper Blackrock Spire",
+            "id": 7307
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7332?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Stormshield",
+            "id": 7332
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7333?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Warspear",
+            "id": 7333
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7334?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Azsuna",
+            "id": 7334
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7490?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Garrison",
+            "id": 7490
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7502?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dalaran",
+            "id": 7502
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7503?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Highmountain",
+            "id": 7503
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7541?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Stormheim",
+            "id": 7541
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7543?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Broken Shore",
+            "id": 7543
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7545?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Hellfire Citadel",
+            "id": 7545
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7546?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Neltharion's Lair",
+            "id": 7546
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7558?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Val'sharah",
+            "id": 7558
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7588?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Helheim",
+            "id": 7588
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7637?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Suramar",
+            "id": 7637
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7672?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Halls of Valor",
+            "id": 7672
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7673?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Darkheart Thicket",
+            "id": 7673
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7679?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Acherus: The Ebon Hold",
+            "id": 7679
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7737?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Niskara",
+            "id": 7737
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7787?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Vault of the Wardens",
+            "id": 7787
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7796?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Broken Shore",
+            "id": 7796
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7805?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Black Rook Hold",
+            "id": 7805
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7812?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Helmouth Cliffs",
+            "id": 7812
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7813?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Skyhold",
+            "id": 7813
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7834?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Netherlight Temple",
+            "id": 7834
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7846?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Dreamgrove",
+            "id": 7846
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7855?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Arcway",
+            "id": 7855
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7875?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dreadscar Rift",
+            "id": 7875
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7877?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Trueshot Lodge",
+            "id": 7877
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7879?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Hall of the Guardian",
+            "id": 7879
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7886?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dalaran City",
+            "id": 7886
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7918?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dreadscar Rift",
+            "id": 7918
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7969?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Karazhan",
+            "id": 7969
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/7996?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Violet Hold",
+            "id": 7996
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8025?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Nighthold",
+            "id": 8025
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8026?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Emerald Nightmare",
+            "id": 8026
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8040?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Eye of Azshara",
+            "id": 8040
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8044?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tirisfal Glades",
+            "id": 8044
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8046?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Maelstrom",
+            "id": 8046
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8079?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Court of Stars",
+            "id": 8079
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8093?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Vortex Pinnacle",
+            "id": 8093
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8124?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sword of Dawn",
+            "id": 8124
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8161?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ulduar",
+            "id": 8161
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8277?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Exodar",
+            "id": 8277
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8317?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tirisfal Glades",
+            "id": 8317
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8318?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tirisfal Glades",
+            "id": 8318
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8347?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sanctum of Light",
+            "id": 8347
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8406?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Black Rook Hold",
+            "id": 8406
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8440?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Trial of Valor",
+            "id": 8440
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8443?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Karazhan",
+            "id": 8443
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8485?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ashran",
+            "id": 8485
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8499?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Zuldazar",
+            "id": 8499
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8500?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Nazmir",
+            "id": 8500
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8501?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Vol'dun",
+            "id": 8501
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8524?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tomb of Sargeras",
+            "id": 8524
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8527?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Cathedral of Eternal Night",
+            "id": 8527
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8567?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tiragarde Sound",
+            "id": 8567
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8574?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Krokuun",
+            "id": 8574
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8638?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Antorus, the Burning Throne",
+            "id": 8638
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8701?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Mac'Aree",
+            "id": 8701
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8717?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Boralus Harbor",
+            "id": 8717
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8721?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Drustvar",
+            "id": 8721
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8899?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Antoran Wastes",
+            "id": 8899
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/8910?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Seat of the Triumvirate",
+            "id": 8910
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9024?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Invasion Point",
+            "id": 9024
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9042?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Stormsong Valley",
+            "id": 9042
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9105?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Vale of Eternal Blossoms",
+            "id": 9105
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9136?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Seething Shore",
+            "id": 9136
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9295?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Greater Invasion Point: Matron Folnuna",
+            "id": 9295
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9296?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Greater Invasion Point: Pit Lord Vilemus",
+            "id": 9296
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9297?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Greater Invasion Point: Inquisitor Meto",
+            "id": 9297
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9298?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Greater Invasion Point: Occularus",
+            "id": 9298
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9299?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Greater Invasion Point: Sotanathor",
+            "id": 9299
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9300?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Greater Invasion Point: Mistress Alluradel",
+            "id": 9300
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9310?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Silithus: The Wound",
+            "id": 9310
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9543?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Mugambala",
+            "id": 9543
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9588?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Hook Point",
+            "id": 9588
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9653?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Hall of Communion",
+            "id": 9653
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9663?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "War Campaign - Alliance",
+            "id": 9663
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9664?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "War Campaign - Horde",
+            "id": 9664
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9667?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Chamber of Heart",
+            "id": 9667
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/9734?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Arathi Highlands",
+            "id": 9734
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10052?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Nazjatar",
+            "id": 10052
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10076?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Battle of Dazar'alor",
+            "id": 10076
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10176?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Wintergrasp",
+            "id": 10176
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10226?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Darkshore",
+            "id": 10226
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10266?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Crucible of Storms",
+            "id": 10266
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10288?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Darkshore",
+            "id": 10288
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10290?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Mechagon",
+            "id": 10290
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10348?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Prototype",
+            "id": 10348
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10425?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Eternal Palace",
+            "id": 10425
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10504?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Chamber of Heart",
+            "id": 10504
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10522?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ny'alotha, the Waking City",
+            "id": 10522
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/area/10833?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Uldum",
+            "id": 10833
+        }
+    ]
+}

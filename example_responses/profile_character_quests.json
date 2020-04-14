@@ -1,0 +1,116 @@
+Character Quests
+/profile/wow/character/{realmSlug}/{characterName}/quests
+
+https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/quests?namespace=profile-eu&locale=en_GB&access_token=USID2zeGm3sA7lfK1hlmEqIrOfGsoS5pms
+
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/quests?namespace=profile-eu"
+        }
+    },
+    "character": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria?namespace=profile-eu"
+        },
+        "name": "Khoria",
+        "id": 133688058,
+        "realm": {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+            },
+            "name": "Moonglade",
+            "id": 1085,
+            "slug": "moonglade"
+        }
+    },
+    "in_progress": [
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50417?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ruin Has Come",
+            "id": 50417
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52510?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Shrine of the Storm: The Missing Ritual",
+            "id": 52510
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/53034?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Shattered Path Through Time",
+            "id": 53034
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/53045?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Surveying the Wharf",
+            "id": 53045
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/54126?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Twist the Knife",
+            "id": 54126
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/54485?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Battle of Dazar'alor",
+            "id": 54485
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/55609?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Operation: Mechagon - The Mechoriginator",
+            "id": 55609
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/56348?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Eternal Palace: We Can Make It Stronger...",
+            "id": 56348
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/56358?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Eternal Palace: Queen's Gambit",
+            "id": 56358
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/57393?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Stepping Through the Darkness",
+            "id": 57393
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/57464?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Maintaining Focus",
+            "id": 57464
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/58632?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ny'alotha, the Waking City: The Corruptor's End",
+            "id": 58632
+        }
+    ],
+    "completed": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/quests/completed?namespace=profile-eu"
+    }
+}

@@ -1,0 +1,1480 @@
+Quest Area
+/data/wow/quest/area/{questAreaId}
+
+https://eu.api.blizzard.com/data/wow/quest/area/9042?namespace=static-eu&locale=en_GB&access_token=EUJTVPzm50C8eXPJ1rRm20fESAJKDo0Em9
+9042
+
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/quest/area/9042?namespace=static-8.3.0_32861-eu"
+        }
+    },
+    "id": 9042,
+    "area": "Stormsong Valley",
+    "quests": [
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/47952?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Missing Fleet",
+            "id": 47952
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49703?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "House Stormsong",
+            "id": 49703
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49704?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Haywire Harvesters",
+            "id": 49704
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49705?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Unnecessary Duress",
+            "id": 49705
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49706?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Proclamation Investigation",
+            "id": 49706
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49725?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Risky Ploy",
+            "id": 49725
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49730?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "WANTED: Thundersnout",
+            "id": 49730
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49744?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Bombs, Away",
+            "id": 49744
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49745?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "You Have Their Orders",
+            "id": 49745
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49746?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dousing the Flames",
+            "id": 49746
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49755?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Heavy Artillery",
+            "id": 49755
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49791?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Lost, Not Forgotten",
+            "id": 49791
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49792?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Bound and Oppressed",
+            "id": 49792
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49793?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Means to an End",
+            "id": 49793
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49794?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Rising Tide",
+            "id": 49794
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49818?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Trouble at Fort Daelin",
+            "id": 49818
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49831?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "From the Depths",
+            "id": 49831
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49832?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "An Illegible Scroll",
+            "id": 49832
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49886?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Follow Your Nose",
+            "id": 49886
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49887?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Forced Labor",
+            "id": 49887
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49908?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Back to Brennadam",
+            "id": 49908
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49960?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sic 'Em!",
+            "id": 49960
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49975?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Rest in the Depths",
+            "id": 49975
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49995?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Fabricated Fabrications",
+            "id": 49995
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49996?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Rearmament",
+            "id": 49996
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49997?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Storm's Judgment",
+            "id": 49997
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/49998?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Voices Below",
+            "id": 49998
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50041?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Pocketful of Shells",
+            "id": 50041
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50064?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Don't Go in the Basement",
+            "id": 50064
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50065?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Reason to Stay",
+            "id": 50065
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50069?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Goldfield's War",
+            "id": 50069
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50070?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Detective Mildenhall",
+            "id": 50070
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50088?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Golden Fields Forever",
+            "id": 50088
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50111?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Totems, Totems, Totems!",
+            "id": 50111
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50134?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Gadgets and Gizmos Aplenty",
+            "id": 50134
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50135?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Stop Vining!",
+            "id": 50135
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50136?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Farming Stimulator",
+            "id": 50136
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50139?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Missing Link",
+            "id": 50139
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50157?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "There's Gold in Them There Fields",
+            "id": 50157
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50158?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Checking Out the Collapse",
+            "id": 50158
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50161?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Recovering Raimond",
+            "id": 50161
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50162?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sticky Situation",
+            "id": 50162
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50165?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Bee Team",
+            "id": 50165
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50168?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Royal Succession",
+            "id": 50168
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50264?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Free the Farmhands",
+            "id": 50264
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50340?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Steal Them Back",
+            "id": 50340
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50343?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Mayhem at Mildenhall Meadery",
+            "id": 50343
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50353?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Boaring Company",
+            "id": 50353
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50354?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Look Out!",
+            "id": 50354
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50359?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Cleanup Duty",
+            "id": 50359
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50363?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "War Pigs",
+            "id": 50363
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50365?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Run For the Hills",
+            "id": 50365
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50367?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Anger in a Bottle",
+            "id": 50367
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50368?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Terror of the Kraul",
+            "id": 50368
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50376?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Deadliest Cache: Reel Big Fish",
+            "id": 50376
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50385?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Indefatigable Purpose",
+            "id": 50385
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50386?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Flush Them Out",
+            "id": 50386
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50387?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Trinkets and Baubles",
+            "id": 50387
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50388?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Weight of My Ambition",
+            "id": 50388
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50389?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Malign Inspiration",
+            "id": 50389
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50391?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Deadliest Cache: Gun Fishin'",
+            "id": 50391
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50417?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ruin Has Come",
+            "id": 50417
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50418?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Deadliest Cache: Sink and Swim",
+            "id": 50418
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50493?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Fetching Wrex",
+            "id": 50493
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50504?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Honey Glazed Sam",
+            "id": 50504
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50534?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Wendigo Away",
+            "id": 50534
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50553?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Back to the Lab",
+            "id": 50553
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50593?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Bloody Mess",
+            "id": 50593
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50594?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Beneath the Veil",
+            "id": 50594
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50595?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "No Quarter",
+            "id": 50595
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50608?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Forbidden Rites",
+            "id": 50608
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50609?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "From the Maw of Madness",
+            "id": 50609
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50610?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Gathering Storm",
+            "id": 50610
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50611?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Storm's Vengeance",
+            "id": 50611
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50612?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A House Divided",
+            "id": 50612
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50614?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Freedom for the Sea",
+            "id": 50614
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50616?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Bit of a Bind",
+            "id": 50616
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50621?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Caught in the Net",
+            "id": 50621
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50622?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Deal's Off",
+            "id": 50622
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50635?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Shifting Tides",
+            "id": 50635
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50640?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Question of Quillpower",
+            "id": 50640
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50644?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Facing the Invaders",
+            "id": 50644
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50645?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Eeling in a Big One",
+            "id": 50645
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50649?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Filching from Thieves",
+            "id": 50649
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50653?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Reclaiming our Defenses",
+            "id": 50653
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50672?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Any Ammo Will Do",
+            "id": 50672
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50674?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Two Faced Pirate Scum",
+            "id": 50674
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50675?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Treasure Hunting",
+            "id": 50675
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50679?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Piercing the Shield",
+            "id": 50679
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50690?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "UNUSED",
+            "id": 50690
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50691?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Not On Our Payroll",
+            "id": 50691
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50694?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Bloody Mess",
+            "id": 50694
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50696?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Fun With Magnets",
+            "id": 50696
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50697?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Bomb Beats Rock",
+            "id": 50697
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50698?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Problem Solving with Gunpowder",
+            "id": 50698
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50704?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Anchors Aweigh Too Much",
+            "id": 50704
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50705?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Snake with Three Heads",
+            "id": 50705
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50706?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Clearing the Delta",
+            "id": 50706
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50733?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A New Dawn",
+            "id": 50733
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50741?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Don't Turtle",
+            "id": 50741
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50742?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "All Laid Out For Us",
+            "id": 50742
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50743?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Immediate Problem",
+            "id": 50743
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50753?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Earl-E Bot Gets the Worm",
+            "id": 50753
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50773?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "You're a Shark",
+            "id": 50773
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50774?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "No Bot Left Behind",
+            "id": 50774
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50777?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Storm Awakens",
+            "id": 50777
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50778?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Twisted Intentions",
+            "id": 50778
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50780?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Oathbound",
+            "id": 50780
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50781?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Bridge Too Far",
+            "id": 50781
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50783?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Abyssal Council",
+            "id": 50783
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50784?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Eye of the Storm",
+            "id": 50784
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50793?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Cave Commotion",
+            "id": 50793
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50797?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Turtle's Invitation",
+            "id": 50797
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50802?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Iron Low Tide",
+            "id": 50802
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50803?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "I Want It All Now",
+            "id": 50803
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50810?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Break 'Em Out",
+            "id": 50810
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50814?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Horrible Place",
+            "id": 50814
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50824?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Storm's End",
+            "id": 50824
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50908?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Smells Like Trouble",
+            "id": 50908
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50909?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Never Outgunned",
+            "id": 50909
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50910?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Dangerous Game",
+            "id": 50910
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50955?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "We're Not Friends",
+            "id": 50955
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/50956?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Walking-Around Money",
+            "id": 50956
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51140?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Share the Wealth",
+            "id": 51140
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51159?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Bring out the Big Gun",
+            "id": 51159
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51200?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Black Sheep",
+            "id": 51200
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51203?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Cry Wolf",
+            "id": 51203
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51204?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "WANTED: Razorclaw Alpha",
+            "id": 51204
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51205?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Aww, Rats!",
+            "id": 51205
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51207?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ettin It Done",
+            "id": 51207
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51208?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Wheat A Minute",
+            "id": 51208
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51209?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Mighty Grokkfist",
+            "id": 51209
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51214?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Be A Dear",
+            "id": 51214
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51215?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Milking Goats",
+            "id": 51215
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51217?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "WANTED: Yarsel'ghun",
+            "id": 51217
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51218?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Undelivered Package",
+            "id": 51218
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51220?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Deep Sea Venture",
+            "id": 51220
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51221?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Response Required",
+            "id": 51221
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51222?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "What's Yours is Mined",
+            "id": 51222
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51251?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Basement Dwellers",
+            "id": 51251
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51278?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Lost and Forgotten",
+            "id": 51278
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51310?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Raiders of the Lost Crop",
+            "id": 51310
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51314?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Grain Drain",
+            "id": 51314
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51319?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Final Ascent",
+            "id": 51319
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51320?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sealed Fate",
+            "id": 51320
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51335?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Cookies and Cream",
+            "id": 51335
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51339?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Cleaning Bills",
+            "id": 51339
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51343?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Swimming Lessons",
+            "id": 51343
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51352?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Don't Play with Matches",
+            "id": 51352
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51353?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Cave of Ai'twen",
+            "id": 51353
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51354?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Anger in a Bottle",
+            "id": 51354
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51371?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Flavorable Offering",
+            "id": 51371
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51386?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Battle Victorious",
+            "id": 51386
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51401?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Carry On",
+            "id": 51401
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51427?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "I Like Turtles",
+            "id": 51427
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51487?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Searching for Answers",
+            "id": 51487
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51488?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Archived Knowledge",
+            "id": 51488
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51489?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Time to Leave",
+            "id": 51489
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51490?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Border Issues",
+            "id": 51490
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51492?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Gunpowder Plot",
+            "id": 51492
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51504?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Cookie Delivery",
+            "id": 51504
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51540?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Explosive Situation",
+            "id": 51540
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51545?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Breaker Bad",
+            "id": 51545
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51552?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Days Are Just Packed",
+            "id": 51552
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51554?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Reloading",
+            "id": 51554
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51557?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Irontide Warning",
+            "id": 51557
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51582?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Make it Mildenhall",
+            "id": 51582
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51711?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Having a Blast",
+            "id": 51711
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51712?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Eye for an Eye",
+            "id": 51712
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51720?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Get Shredded",
+            "id": 51720
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51723?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Saw Dusted",
+            "id": 51723
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51726?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Get Out of Here",
+            "id": 51726
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51728?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Burn It All Down",
+            "id": 51728
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51752?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Grizzled",
+            "id": 51752
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/51881?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Mine Sweeper",
+            "id": 51881
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52065?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Worse Than It Looks",
+            "id": 52065
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52067?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Survivors",
+            "id": 52067
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52068?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Helping Out, Somewhere Else",
+            "id": 52068
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52069?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "More Fodder",
+            "id": 52069
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52070?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Bauer Backup",
+            "id": 52070
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52130?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Deadliest Cache: Carpe Diem",
+            "id": 52130
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52132?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The Proof of Piracy",
+            "id": 52132
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52782?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Call to Arms: Stormsong Valley",
+            "id": 52782
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52793?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Circle the Wagons",
+            "id": 52793
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52795?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Saur Point",
+            "id": 52795
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52796?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sometimes Less Is More",
+            "id": 52796
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52876?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "WANTED: War Gore",
+            "id": 52876
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/52957?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Call to Arms: Stormsong Valley",
+            "id": 52957
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/53045?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Surveying the Wharf",
+            "id": 53045
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/53097?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Despondent Ablutions",
+            "id": 53097
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/53099?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "A Mote of Cosmic Truth",
+            "id": 53099
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/53105?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Misplaced Faith",
+            "id": 53105
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/53330?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "WANTED: Razorclaw Alpha",
+            "id": 53330
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/53347?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Bumbles the Bee",
+            "id": 53347
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/53348?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "WANTED: Thundersnout",
+            "id": 53348
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/53369?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Make Loh Go",
+            "id": 53369
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/53371?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Let's Bee Friends",
+            "id": 53371
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/54628?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Paragon of the Storm's Wake",
+            "id": 54628
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/56091?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Usurper's Scent Gland",
+            "id": 56091
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/56092?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Hivethief's Jelly Stash",
+            "id": 56092
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/56108?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Leaving the Hive",
+            "id": 56108
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/56144?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Old Nasha's Paw",
+            "id": 56144
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/56473?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Envenomed Spider Fang",
+            "id": 56473
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/56474?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Hivekiller Stinger",
+            "id": 56474
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/56475?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Spiral Yeti Horn",
+            "id": 56475
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/57126?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "...And Following Seas",
+            "id": 57126
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/57198?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sense of Obligation",
+            "id": 57198
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/57324?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sail With the Tide",
+            "id": 57324
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/quest/57670?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Unbeelievable Quality",
+            "id": 57670
+        }
+    ]
+}

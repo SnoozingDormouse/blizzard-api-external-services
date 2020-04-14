@@ -11,16 +11,12 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
 {
     public class BlizzardAPIService : IBlizzardAPIService
     {
-        private readonly string _referenceCharacter;
-        private readonly string _referenceRealm;
-
         private readonly String _clientId;
         private readonly String _clientSecret;
         private readonly IHttpClientFactory _clientFactory;
 
         private AccessToken _accessToken;
-        private readonly string _gameDataQueryURL;
-        private readonly string _profileQueryURL;
+        private readonly string _blizzardApiURL;
         private readonly string _tokenURL;
 
         public BlizzardAPIService(IHttpClientFactory clientFactory, IConfiguration configuration)
@@ -28,36 +24,35 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
             _clientFactory = clientFactory;
             _clientId = configuration["Battlenet:ClientId"];
             _clientSecret = configuration["Battlenet:ClientSecret"];
-            _referenceRealm = configuration["Battlenet:ReferenceRealm"];
-            _referenceCharacter = configuration["Battlenet:ReferenceCharacter"];
 
-            _gameDataQueryURL = configuration["Battlenet:GameDataQueryURL"];
-            _profileQueryURL = configuration["Battlenet:ProfileQueryURL"];
+            _blizzardApiURL = configuration["Battlenet:BlizzardApiURL"];
             _tokenURL = configuration["Battlenet:TokenURL"];
         }
 
-        public async Task<string> GetBlizzardGameDataAPIResponseAsJsonAsync(string apiPath)
+        public BlizzardAPIService()
         {
-            var url = String.Format(_gameDataQueryURL, apiPath, "{0}");
-            return await GetBlizzardAPIResponseAsJsonAsync(url);
+
         }
 
-        public async Task<string> GetBlizzardDefaultProfileAPIResponseAsJsonAsync(string apiPath)
+        private string GetNamespace(string blizzardQueryPath)
         {
-            return await GetBlizzardProfileAPIResponseAsJsonAsync(apiPath, _referenceRealm, _referenceCharacter);
+            if (blizzardQueryPath.StartsWith("data", StringComparison.CurrentCultureIgnoreCase))
+                return "static-eu";
+
+            if (blizzardQueryPath.StartsWith("profile", StringComparison.CurrentCultureIgnoreCase))
+                return "profile-eu";
+
+            throw new NotSupportedException(String.Format("{0} is not supported", blizzardQueryPath));
         }
 
-        public async Task<string> GetBlizzardProfileAPIResponseAsJsonAsync(string apiPath, string realm, string character)
+        public async Task<string> GetBlizzardAPIResponseAsJsonAsync(string blizzardQueryPath)
         {
-            var url = String.Format(_profileQueryURL, realm, character, apiPath, "{0}");
-            return await GetBlizzardAPIResponseAsJsonAsync(url);
-        }
+            var nameSpace = GetNamespace(blizzardQueryPath);
+            var queryURL = String.Format(_blizzardApiURL, blizzardQueryPath, nameSpace, "{0}");
 
-        private async Task<string> GetBlizzardAPIResponseAsJsonAsync(string queryURL)
-        {
             if (!ValidAccessToken())
             {
-                _accessToken = GetValidAccessTokenFromBlizzard().Result;
+                _accessToken = await GetValidAccessTokenFromBlizzard();
             }
 
             var apiURL = String.Format(queryURL, _accessToken.Token);
@@ -65,7 +60,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
             return await GetBlizzardAPIInfoAsync(apiURL);
         }
 
-        async Task<string> GetBlizzardAPIInfoAsync(string apiURL)
+        internal async Task<string> GetBlizzardAPIInfoAsync(string apiURL)
         {
             String blizzardAPIResponse = null;
 
@@ -95,7 +90,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
             return _accessToken != null && _accessToken.Token != null && _accessToken.ExpiresAt != null && ((DateTime)_accessToken.ExpiresAt).AddMinutes(3) > DateTime.Now;
         }
 
-        private async Task<AccessToken> GetValidAccessTokenFromBlizzard()
+        public async Task<AccessToken> GetValidAccessTokenFromBlizzard()
         {
             TokenResponse token;
 

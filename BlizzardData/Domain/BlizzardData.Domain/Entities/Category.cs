@@ -1,8 +1,8 @@
-﻿using BlizzardData.Domain.NonEntities;
-
-namespace BlizzardData.Domain.Entities
+﻿namespace BlizzardData.Domain.Entities
 {
-    public class Category : NameIdPair
+    public class Category
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }

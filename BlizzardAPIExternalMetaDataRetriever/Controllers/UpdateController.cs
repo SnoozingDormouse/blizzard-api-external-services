@@ -1,9 +1,10 @@
-﻿using BlizzardAPIExternalMetaDataRetriever.Achievements;
+﻿using System.Threading.Tasks;
+using BlizzardAPIExternalMetaDataRetriever.Achievements;
+using BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices;
 using BlizzardData.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Threading.Tasks;
+
 
 namespace BlizzardAPIExternalMetaDataRetriever.Controllers
 {
@@ -12,15 +13,14 @@ namespace BlizzardAPIExternalMetaDataRetriever.Controllers
     public class UpdateController : ControllerBase
     {
         private readonly IAchievementService _achievementService;
-        private readonly RefreshGameDataCriteria _refreshCriteria;
+        private readonly IBlizzardAPIService _blizzardAPIService;
 
         public UpdateController(
-            AchievementContext achievementContext,
             IAchievementService achievementService,
-            ICriteriaService criteriaService)
+            IBlizzardAPIService blizzardAPIService)
         {
             _achievementService = achievementService;
-            _refreshCriteria = new RefreshGameDataCriteria(achievementContext, criteriaService);
+            _blizzardAPIService = blizzardAPIService;
         }
 
         [HttpGet]
@@ -34,13 +34,22 @@ namespace BlizzardAPIExternalMetaDataRetriever.Controllers
         }
 
         [HttpGet]
-        [Route("Criteria")]
+        [Route("Achievement/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<string> UpdateCriteria()
+        public async Task<string> UpdateAchievement(int id)
         {
             // invoke pull from external services
-            return await _refreshCriteria.UpdateAll();
+            return await _achievementService.Update(id);
+        }
+
+        [HttpGet]
+        [Route("GetAccessToken")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<AccessToken> GetAccessToken()
+        {
+            return await _blizzardAPIService.GetValidAccessTokenFromBlizzard();
         }
     }
 }

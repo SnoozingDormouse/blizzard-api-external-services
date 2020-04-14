@@ -1,0 +1,33 @@
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/achievement/556?namespace=static-8.3.0_32861-eu"
+        }
+    },
+    "id": 556,
+    "category": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/achievement-category/15234?namespace=static-8.3.0_32861-eu"
+        },
+        "name": "Legacy",
+        "id": 15234
+    },
+    "name": "Epic",
+    "description": "Equip an epic item in every slot with a minimum item level of 213 (prior to Battle for Azeroth).",
+    "points": 0,
+    "is_account_wide": false,
+    "next_achievement": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/achievement/5372?namespace=static-8.3.0_32861-eu"
+        },
+        "name": "Cataclysmically Epic",
+        "id": 5372
+    },
+    "media": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/media/achievement/556?namespace=static-8.3.0_32861-eu"
+        },
+        "id": 556
+    },
+    "display_order": 13
+}

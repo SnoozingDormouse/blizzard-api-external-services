@@ -1,0 +1,272 @@
+Reputation Tiers Index
+ /data/wow/reputation-tiers/index
+ 
+ https://eu.api.blizzard.com/data/wow/reputation-tiers/index?namespace=static-eu&locale=en_GB&access_token=USID2zeGm3sA7lfK1hlmEqIrOfGsoS5pms
+ 
+ {
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/?namespace=static-8.3.0_32861-eu"
+        }
+    },
+    "reputation_tiers": [
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/0?namespace=static-8.3.0_32861-eu"
+            },
+            "id": 0
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/2?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Farmer Fung",
+            "id": 2
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/16?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Chee Chee",
+            "id": 16
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/17?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ella",
+            "id": 17
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/18?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Fish Fellreed",
+            "id": 18
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/19?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Gina Mudclaw",
+            "id": 19
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/20?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Haohan Mudclaw",
+            "id": 20
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/21?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Jogu the Drunk",
+            "id": 21
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/22?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Old Hillpaw",
+            "id": 22
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/23?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sho",
+            "id": 23
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/24?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tina Mudclaw",
+            "id": 24
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/26?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Nat Pagle",
+            "id": 26
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/28?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Brawl'gar Arena",
+            "id": 28
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/43?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Bizmo's Brawlpub",
+            "id": 43
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/72?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Darkspear Rebellion",
+            "id": 72
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/160?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tormmok",
+            "id": 160
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/162?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Defender Illona",
+            "id": 162
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/163?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Aeda Brightdawn",
+            "id": 163
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/164?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Delvar Ironfist",
+            "id": 164
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/165?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Vivianne",
+            "id": 165
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/166?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Talonpriest Ishaal",
+            "id": 166
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/167?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Leorajh",
+            "id": 167
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/171?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Brawl'gar Arena (Season 1)",
+            "id": 171
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/172?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Bizmo's Brawlpub (Season 1)",
+            "id": 172
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/193?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Conjurer Margoss",
+            "id": 193
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/195?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "The First Responders",
+            "id": 195
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/199?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Ilyssia of the Waters",
+            "id": 199
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/200?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Akule Riverhorn",
+            "id": 200
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/202?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Impus",
+            "id": 202
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/204?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Keeper Raynae",
+            "id": 204
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/206?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Sha'leth",
+            "id": 206
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/208?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Corbyn",
+            "id": 208
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/209?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Chromie",
+            "id": 209
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/210?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Bizmo's Brawlpub (Season 2)",
+            "id": 210
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/212?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Brawl'gar Arena (Season 2)",
+            "id": 212
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/339?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Bizmo's Brawlpub (Season 3)",
+            "id": 339
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/reputation-tiers/340?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Brawl'gar Arena (Season 3)",
+            "id": 340
+        }
+    ]
+}

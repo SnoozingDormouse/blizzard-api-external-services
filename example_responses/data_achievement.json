@@ -1,0 +1,168 @@
+Achievement
+ /data/wow/achievement/{achievementId}
+ 
+ https://eu.api.blizzard.com/data/wow/achievement/12947?namespace=static-eu&locale=en_GB&access_token=USID2zeGm3sA7lfK1hlmEqIrOfGsoS5pms
+ 
+ {
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/achievement/12947?namespace=static-8.3.0_32861-eu"
+        }
+    },
+    "id": 12947,
+    "category": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/achievement-category/15305?namespace=static-8.3.0_32861-eu"
+        },
+        "name": "Battle for Azeroth",
+        "id": 15305
+    },
+    "name": "Azerothian Diplomat",
+    "description": "Earn Revered with all of the reputations listed below.",
+    "points": 10,
+    "is_account_wide": true,
+    "criteria": {
+        "id": 69624,
+        "description": "Azerothian Diplomat",
+        "amount": 0,
+        "operator": {
+            "type": "AND",
+            "name": "Complete All"
+        },
+        "child_criteria": [
+            {
+                "id": 70656,
+                "description": "Zone 1 Rep",
+                "amount": 1,
+                "operator": {
+                    "type": "COMPLETE_AT_LEAST",
+                    "name": "Complete At Least"
+                },
+                "child_criteria": [
+                    {
+                        "id": 69625,
+                        "description": "Zandalari Empire",
+                        "amount": 21000,
+                        "faction": {
+                            "type": "HORDE",
+                            "name": "Horde"
+                        }
+                    },
+                    {
+                        "id": 70657,
+                        "description": "Proudmoore Admiralty",
+                        "amount": 21000,
+                        "faction": {
+                            "type": "ALLIANCE",
+                            "name": "Alliance"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 70658,
+                "description": "Zone 2",
+                "amount": 1,
+                "operator": {
+                    "type": "COMPLETE_AT_LEAST",
+                    "name": "Complete At Least"
+                },
+                "child_criteria": [
+                    {
+                        "id": 69626,
+                        "description": "Talanji's Expedition",
+                        "amount": 21000,
+                        "faction": {
+                            "type": "HORDE",
+                            "name": "Horde"
+                        }
+                    },
+                    {
+                        "id": 70659,
+                        "description": "Order of Embers",
+                        "amount": 21000,
+                        "faction": {
+                            "type": "ALLIANCE",
+                            "name": "Alliance"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 70660,
+                "description": "Zone 3",
+                "amount": 1,
+                "operator": {
+                    "type": "COMPLETE_AT_LEAST",
+                    "name": "Complete At Least"
+                },
+                "child_criteria": [
+                    {
+                        "id": 69627,
+                        "description": "Voldunai",
+                        "amount": 21000,
+                        "faction": {
+                            "type": "HORDE",
+                            "name": "Horde"
+                        }
+                    },
+                    {
+                        "id": 70661,
+                        "description": "Storm's Wake",
+                        "amount": 21000,
+                        "faction": {
+                            "type": "ALLIANCE",
+                            "name": "Alliance"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 70662,
+                "description": "War Campaign",
+                "amount": 1,
+                "operator": {
+                    "type": "COMPLETE_AT_LEAST",
+                    "name": "Complete At Least"
+                },
+                "child_criteria": [
+                    {
+                        "id": 70663,
+                        "description": "The Honorbound",
+                        "amount": 21000,
+                        "faction": {
+                            "type": "HORDE",
+                            "name": "Horde"
+                        }
+                    },
+                    {
+                        "id": 70664,
+                        "description": "7th Legion",
+                        "amount": 21000,
+                        "faction": {
+                            "type": "ALLIANCE",
+                            "name": "Alliance"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 70665,
+                "description": "Champions of Azeroth",
+                "amount": 21000
+            },
+            {
+                "id": 70666,
+                "description": "Tortollan Seekers",
+                "amount": 21000
+            }
+        ]
+    },
+    "media": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/media/achievement/12947?namespace=static-8.3.0_32861-eu"
+        },
+        "id": 12947
+    },
+    "display_order": 1
+}

@@ -1,0 +1,81 @@
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/achievement/12496?namespace=static-8.3.0_32861-eu"
+        }
+    },
+    "id": 12496,
+    "category": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/achievement-category/15284?namespace=static-8.3.0_32861-eu"
+        },
+        "name": "Battle for Azeroth",
+        "id": 15284
+    },
+    "name": "Stormsong and Dance",
+    "description": "Complete the Stormsong Valley storylines listed below.",
+    "faction": {
+        "type": "ALLIANCE",
+        "name": "Alliance"
+    },
+    "points": 10,
+    "is_account_wide": false,
+    "criteria": {
+        "id": 66027,
+        "description": "8.0 Zone Achievement - Stormsong Valley - GJC",
+        "amount": 0,
+        "operator": {
+            "type": "AND",
+            "name": "Complete All"
+        },
+        "child_criteria": [
+            {
+                "id": 66030,
+                "description": "The Tidesages of Stormsong",
+                "amount": 0
+            },
+            {
+                "id": 66116,
+                "description": "A House in Peril",
+                "amount": 0
+            },
+            {
+                "id": 66029,
+                "description": "The Growing Tempest",
+                "amount": 0
+            },
+            {
+                "id": 66028,
+                "description": "At the Edge of Madness",
+                "amount": 0
+            },
+            {
+                "id": 67441,
+                "description": "Cycle of Hatred",
+                "amount": 0
+            },
+            {
+                "id": 67442,
+                "description": "From the Depths They Come",
+                "amount": 0
+            },
+            {
+                "id": 67443,
+                "description": "Briarback Kraul",
+                "amount": 0
+            },
+            {
+                "id": 67444,
+                "description": "Treasure in Deadwash",
+                "amount": 0
+            }
+        ]
+    },
+    "media": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/media/achievement/12496?namespace=static-8.3.0_32861-eu"
+        },
+        "id": 12496
+    },
+    "display_order": 4
+}

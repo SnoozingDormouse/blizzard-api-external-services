@@ -1,5 +1,6 @@
 using System;
 using BlizzardAPIExternalMetaDataRetriever.Achievements;
+using BlizzardAPIExternalMetaDataRetriever.Reputations.RetrieveFromBlizzardAPI;
 using BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices;
 using BlizzardData.Data;
 using Microsoft.AspNetCore.Builder;
@@ -22,23 +23,38 @@ namespace BlizzardAPIExternalMetaDataRetriever
 
         public IConfiguration Configuration { get; }
         public String ConnectionString { get; }
+        readonly string AllowSpecificOrigins = "_allowSpecificOrigins";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(AllowSpecificOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:4200");
+                        builder.WithOrigins("http://localhost:50421");
+                    });
+            });
+
             services.AddHttpClient();
             services.AddControllers();
 
-            services.AddDbContext<AchievementContext>(options => options.UseSqlServer(ConnectionString), ServiceLifetime.Scoped);
+            services.AddDbContext<DataContext>(
+                options => 
+                options
+                .UseLazyLoadingProxies()
+                .UseSqlServer(ConnectionString), ServiceLifetime.Scoped);
 
             services.AddScoped<IBlizzardAPIService, BlizzardAPIService>();
 
             services.AddScoped<IAchievementService>(s => new AchievementService(
-                s.GetService<AchievementContext>(),
+                s.GetService<DataContext>(),
                 s.GetService<IBlizzardAPIService>()));
 
-            services.AddScoped<ICriteriaService>(s => new CriteriaService(
-                s.GetService<AchievementContext>(),
+            services.AddScoped<IReputationService>(s => new ReputationService(
+                s.GetService<DataContext>(),
                 s.GetService<IBlizzardAPIService>()));
 
             // Register the Swagger generator, defining 1 or more Swagger documents
@@ -67,8 +83,8 @@ namespace BlizzardAPIExternalMetaDataRetriever
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
             app.UseAuthorization();
+            app.UseCors(AllowSpecificOrigins);
 
             app.UseEndpoints(endpoints =>
             {

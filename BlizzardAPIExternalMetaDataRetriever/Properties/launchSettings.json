@@ -15,7 +15,8 @@
       "launchUrl": "http://localhost:50421/swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "sqlDebugging": false
     },
     "BlizzardAPIExternalMetaDataRetriever": {
       "commandName": "Project",

@@ -1,0 +1,205 @@
+Achievement Category
+ /data/wow/achievement-category/{achievementCategoryId}
+ 
+ https://eu.api.blizzard.com/data/wow/achievement-category/97?namespace=static-eu&locale=en_GB&access_token=USID2zeGm3sA7lfK1hlmEqIrOfGsoS5pms
+ 
+ {
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/achievement-category/97?namespace=static-8.3.0_32861-eu"
+        }
+    },
+    "id": 97,
+    "name": "Exploration",
+    "achievements": [
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/42?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Eastern Kingdoms Explorer",
+            "id": 42
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/43?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Kalimdor Explorer",
+            "id": 43
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/44?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Outland Explorer",
+            "id": 44
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/45?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Northrend Explorer",
+            "id": 45
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/46?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Universal Explorer",
+            "id": 46
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/964?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Going Down?",
+            "id": 964
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/1244?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Well Read",
+            "id": 1244
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/1832?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Tastes Like Chicken",
+            "id": 1832
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/1833?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "It's Happy Hour Somewhere",
+            "id": 1833
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/2556?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Pest Control",
+            "id": 2556
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/4868?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Cataclysm Explorer",
+            "id": 4868
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/6974?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Pandaria Explorer",
+            "id": 6974
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/8935?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Draenor Explorer",
+            "id": 8935
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/9924?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Field Photographer",
+            "id": 9924
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/11188?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Broken Isles Explorer",
+            "id": 11188
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement/12988?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Battle for Azeroth Explorer",
+            "id": 12988
+        }
+    ],
+    "subcategories": [
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement-category/14777?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Eastern Kingdoms",
+            "id": 14777
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement-category/14778?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Kalimdor",
+            "id": 14778
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement-category/14779?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Outland",
+            "id": 14779
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement-category/14780?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Northrend",
+            "id": 14780
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement-category/15069?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Cataclysm",
+            "id": 15069
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement-category/15113?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Pandaria",
+            "id": 15113
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement-category/15235?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Draenor",
+            "id": 15235
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement-category/15257?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Legion",
+            "id": 15257
+        },
+        {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/achievement-category/15298?namespace=static-8.3.0_32861-eu"
+            },
+            "name": "Battle for Azeroth",
+            "id": 15298
+        }
+    ],
+    "is_guild_category": false,
+    "aggregates_by_faction": {
+        "alliance": {
+            "quantity": 296,
+            "points": 3130
+        },
+        "horde": {
+            "quantity": 295,
+            "points": 3125
+        }
+    },
+    "display_order": 3
+}

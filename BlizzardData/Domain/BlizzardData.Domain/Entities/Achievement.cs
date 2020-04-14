@@ -8,7 +8,6 @@
             public string Description { get; set; }
             public int Points { get; set; }
             public bool IsAccountWide { get; set; }
-            public int? CriteriaId { get; set; }
-            public int? NextAchievementId { get; set; }
+            public string RewardDescription { get; set; }
     }
 }

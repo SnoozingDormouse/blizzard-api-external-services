@@ -1,0 +1,129 @@
+Character Profile Summary
+ /profile/wow/character/{realmSlug}/{characterName}
+ 
+ https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria?namespace=profile-eu&locale=en_GB&access_token=USID2zeGm3sA7lfK1hlmEqIrOfGsoS5pms
+ 
+ {
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria?namespace=profile-eu"
+        }
+    },
+    "id": 133688058,
+    "name": "Khoria",
+    "gender": {
+        "type": "FEMALE",
+        "name": "Female"
+    },
+    "faction": {
+        "type": "ALLIANCE",
+        "name": "Alliance"
+    },
+    "race": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-eu"
+        },
+        "name": "Gnome",
+        "id": 7
+    },
+    "character_class": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-eu"
+        },
+        "name": "Warrior",
+        "id": 1
+    },
+    "active_spec": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/72?namespace=static-8.3.0_32861-eu"
+        },
+        "name": "Fury",
+        "id": 72
+    },
+    "realm": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+        },
+        "name": "Moonglade",
+        "id": 1085,
+        "slug": "moonglade"
+    },
+    "guild": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/guild/moonglade/chasm?namespace=profile-eu"
+        },
+        "name": "Chasm",
+        "id": 53206955,
+        "realm": {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+            },
+            "name": "Moonglade",
+            "id": 1085,
+            "slug": "moonglade"
+        },
+        "faction": {
+            "type": "ALLIANCE",
+            "name": "Alliance"
+        }
+    },
+    "level": 120,
+    "experience": 0,
+    "achievement_points": 15865,
+    "achievements": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/achievements?namespace=profile-eu"
+    },
+    "titles": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/titles?namespace=profile-eu"
+    },
+    "pvp_summary": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/pvp-summary?namespace=profile-eu"
+    },
+    "encounters": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/encounters?namespace=profile-eu"
+    },
+    "media": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/character-media?namespace=profile-eu"
+    },
+    "last_login_timestamp": 1586362850000,
+    "average_item_level": 442,
+    "equipped_item_level": 442,
+    "specializations": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/specializations?namespace=profile-eu"
+    },
+    "statistics": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/statistics?namespace=profile-eu"
+    },
+    "mythic_keystone_profile": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/mythic-keystone-profile?namespace=profile-eu"
+    },
+    "equipment": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/equipment?namespace=profile-eu"
+    },
+    "appearance": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/appearance?namespace=profile-eu"
+    },
+    "collections": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/collections?namespace=profile-eu"
+    },
+    "active_title": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/title/150?namespace=static-8.3.0_32861-eu"
+        },
+        "name": "Professor",
+        "id": 150,
+        "display_string": "Professor {name}"
+    },
+    "reputations": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/reputations?namespace=profile-eu"
+    },
+    "quests": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/quests?namespace=profile-eu"
+    },
+    "achievements_statistics": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/achievements/statistics?namespace=profile-eu"
+    },
+    "professions": {
+        "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/professions?namespace=profile-eu"
+    }
+}

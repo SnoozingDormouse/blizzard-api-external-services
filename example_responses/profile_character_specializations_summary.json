@@ -1,0 +1,571 @@
+Character Specializations Summary
+/profile/wow/character/{realmSlug}/{characterName}/specializations
+
+https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/specializations?namespace=profile-eu&locale=en_GB&access_token=USID2zeGm3sA7lfK1hlmEqIrOfGsoS5pms
+
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria/specializations?namespace=profile-eu"
+        }
+    },
+    "specializations": [
+        {
+            "specialization": {
+                "key": {
+                    "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/72?namespace=static-8.3.0_32861-eu"
+                },
+                "name": "Fury",
+                "id": 72
+            },
+            "talents": [
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/22632?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "War Machine",
+                        "id": 22632
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/262231?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "War Machine",
+                            "id": 262231
+                        },
+                        "description": "Your auto attacks generate 10% more Rage.\r\n\r\nKilling an enemy instantly generates 10 Rage, and increases your movement speed by 30% for 8 sec.",
+                        "cast_time": "Passive"
+                    },
+                    "tier_index": 0,
+                    "column_index": 0
+                },
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/19676?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Double Time",
+                        "id": 19676
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/103827?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Double Time",
+                            "id": 103827
+                        },
+                        "description": "Increases the maximum number of charges on Charge by 1, and reduces its cooldown by 3 sec.",
+                        "cast_time": "Passive"
+                    },
+                    "tier_index": 1,
+                    "column_index": 0
+                },
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/22381?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Sudden Death",
+                        "id": 22381
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/280721?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Sudden Death",
+                            "id": 280721
+                        },
+                        "description": "Your attacks have a chance to reset the cooldown of Execute and make it usable on any target, regardless of their health.",
+                        "cast_time": "Passive"
+                    },
+                    "tier_index": 2,
+                    "column_index": 1
+                },
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/22382?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Warpaint",
+                        "id": 22382
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/208154?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Warpaint",
+                            "id": 208154
+                        },
+                        "description": "You take 10% reduced damage while Enrage is active.",
+                        "cast_time": "Passive"
+                    },
+                    "tier_index": 3,
+                    "column_index": 2
+                },
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/19140?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Frothing Berserker",
+                        "id": 19140
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/215571?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Frothing Berserker",
+                            "id": 215571
+                        },
+                        "description": "Rampage now costs 95 Rage and increases your damage done by 10% and Haste by 5% for 6 sec.",
+                        "cast_time": "Passive"
+                    },
+                    "tier_index": 4,
+                    "column_index": 2
+                },
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/22400?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Bladestorm",
+                        "id": 22400
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/46924?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Bladestorm",
+                            "id": 46924
+                        },
+                        "description": "Become an unstoppable storm of destructive force, striking all targets within 8 yards with both weapons for 37,702 Physical damage over 3.3 sec.\r\n\r\nYou are immune to movement impairing and loss of control effects, but can use defensive abilities and avoid attacks.\r\n\r\nGenerates 25 Rage over the duration.",
+                        "cast_time": "Instant",
+                        "cooldown": "1 min cooldown"
+                    },
+                    "tier_index": 5,
+                    "column_index": 2
+                },
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/16037?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Siegebreaker",
+                        "id": 16037
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/280772?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Siegebreaker",
+                            "id": 280772
+                        },
+                        "description": "Break the enemy's defenses, dealing 10,084 Physical damage, and increasing your damage done to the target by 15% for 10 sec.\r\n\r\nGenerates 10 Rage.",
+                        "cast_time": "Instant",
+                        "range": "Melee Range",
+                        "cooldown": "30 sec cooldown"
+                    },
+                    "tier_index": 6,
+                    "column_index": 2
+                }
+            ],
+            "pvp_talent_slots": [
+                {
+                    "selected": {
+                        "talent": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/pvp-talent/3592?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Gladiator's Medallion",
+                            "id": 3592
+                        },
+                        "spell_tooltip": {
+                            "spell": {
+                                "key": {
+                                    "href": "https://eu.api.blizzard.com/data/wow/spell/208683?namespace=static-8.3.0_32861-eu"
+                                },
+                                "name": "Gladiator's Medallion",
+                                "id": 208683
+                            },
+                            "description": "Removes all movement impairing effects and all effects which cause loss of control of your character while in PvP combat.",
+                            "cast_time": "Instant",
+                            "cooldown": "2 min cooldown"
+                        }
+                    },
+                    "slot_number": 1
+                },
+                {
+                    "selected": {
+                        "talent": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/pvp-talent/172?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Thirst for Battle",
+                            "id": 172
+                        },
+                        "spell_tooltip": {
+                            "spell": {
+                                "key": {
+                                    "href": "https://eu.api.blizzard.com/data/wow/spell/199202?namespace=static-8.3.0_32861-eu"
+                                },
+                                "name": "Thirst for Battle",
+                                "id": 199202
+                            },
+                            "description": "Bloodthirst clears all snares and increases your movement speed by 15% for 2 sec.",
+                            "cast_time": "Passive"
+                        }
+                    },
+                    "slot_number": 2
+                },
+                {
+                    "selected": {
+                        "talent": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/pvp-talent/3533?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Disarm",
+                            "id": 3533
+                        },
+                        "spell_tooltip": {
+                            "spell": {
+                                "key": {
+                                    "href": "https://eu.api.blizzard.com/data/wow/spell/236077?namespace=static-8.3.0_32861-eu"
+                                },
+                                "name": "Disarm",
+                                "id": 236077
+                            },
+                            "description": "Disarm the enemy's weapons and shield for 6 sec. Disarmed creatures deal significantly reduced damage.",
+                            "cast_time": "Instant",
+                            "range": "Melee Range",
+                            "cooldown": "45 sec cooldown"
+                        }
+                    },
+                    "slot_number": 3
+                },
+                {
+                    "selected": {
+                        "talent": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/pvp-talent/3735?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Slaughterhouse",
+                            "id": 3735
+                        },
+                        "spell_tooltip": {
+                            "spell": {
+                                "key": {
+                                    "href": "https://eu.api.blizzard.com/data/wow/spell/280747?namespace=static-8.3.0_32861-eu"
+                                },
+                                "name": "Slaughterhouse",
+                                "id": 280747
+                            },
+                            "description": "Bloodthirst deals up to an additional 50% damage and healing when it hits a target under 50% health, and reduces its remaining cooldown by 1 sec.",
+                            "cast_time": "Passive"
+                        }
+                    },
+                    "slot_number": 4
+                }
+            ]
+        },
+        {
+            "specialization": {
+                "key": {
+                    "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/73?namespace=static-8.3.0_32861-eu"
+                },
+                "name": "Protection",
+                "id": 73
+            },
+            "talents": [
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/15760?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Into the Fray",
+                        "id": 15760
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/202603?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Into the Fray",
+                            "id": 202603
+                        },
+                        "description": "You gain 3% Haste for each enemy or ally within 10 yards, up to 15% Haste.",
+                        "cast_time": "Passive"
+                    },
+                    "tier_index": 0,
+                    "column_index": 0
+                },
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/22629?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Bounding Stride",
+                        "id": 22629
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/202163?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Bounding Stride",
+                            "id": 202163
+                        },
+                        "description": "Reduces the cooldown on Heroic Leap by 15 sec, and Heroic Leap now also increases your run speed by 70% for 3 sec.",
+                        "cast_time": "Passive"
+                    },
+                    "tier_index": 1,
+                    "column_index": 1
+                },
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/22626?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Unstoppable Force",
+                        "id": 22626
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/275336?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Unstoppable Force",
+                            "id": 275336
+                        },
+                        "description": "Avatar increases the damage of Thunder Clap by 30%, and reduces its cooldown by 50%.",
+                        "cast_time": "Passive"
+                    },
+                    "tier_index": 2,
+                    "column_index": 1
+                },
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/22488?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Bolster",
+                        "id": 22488
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/280001?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Bolster",
+                            "id": 280001
+                        },
+                        "description": "Last Stand's cooldown is reduced by 60 sec, and it additionally causes you to block all melee attacks.",
+                        "cast_time": "Passive"
+                    },
+                    "tier_index": 3,
+                    "column_index": 2
+                },
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/22631?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Rumbling Earth",
+                        "id": 22631
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/275339?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Rumbling Earth",
+                            "id": 275339
+                        },
+                        "description": "When Shockwave strikes at least 3 targets, its cooldown is reduced by 15 sec.",
+                        "cast_time": "Passive"
+                    },
+                    "tier_index": 4,
+                    "column_index": 1
+                },
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/22395?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Booming Voice",
+                        "id": 22395
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/202743?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Booming Voice",
+                            "id": 202743
+                        },
+                        "description": "Demoralizing Shout also generates 40 Rage, and increases damage you deal to affected targets by 15%.",
+                        "cast_time": "Passive"
+                    },
+                    "tier_index": 5,
+                    "column_index": 0
+                },
+                {
+                    "talent": {
+                        "key": {
+                            "href": "https://eu.api.blizzard.com/data/wow/talent/21204?namespace=static-8.3.0_32861-eu"
+                        },
+                        "name": "Anger Management",
+                        "id": 21204
+                    },
+                    "spell_tooltip": {
+                        "spell": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/spell/152278?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Anger Management",
+                            "id": 152278
+                        },
+                        "description": "Every 20 Rage you spend reduces the remaining cooldown on Recklessness by 1 sec.",
+                        "cast_time": "Passive"
+                    },
+                    "tier_index": 6,
+                    "column_index": 0
+                }
+            ],
+            "pvp_talent_slots": [
+                {
+                    "selected": {
+                        "talent": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/pvp-talent/3593?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Adaptation",
+                            "id": 3593
+                        },
+                        "spell_tooltip": {
+                            "spell": {
+                                "key": {
+                                    "href": "https://eu.api.blizzard.com/data/wow/spell/214027?namespace=static-8.3.0_32861-eu"
+                                },
+                                "name": "Adaptation",
+                                "id": 214027
+                            },
+                            "description": "Removes any loss of control effect with a duration of 5 seconds or more. This effect can only occur once every 1 min.",
+                            "cast_time": "Passive"
+                        }
+                    },
+                    "slot_number": 1
+                },
+                {
+                    "selected": {
+                        "talent": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/pvp-talent/167?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Sword and Board",
+                            "id": 167
+                        },
+                        "spell_tooltip": {
+                            "spell": {
+                                "key": {
+                                    "href": "https://eu.api.blizzard.com/data/wow/spell/199127?namespace=static-8.3.0_32861-eu"
+                                },
+                                "name": "Sword and Board",
+                                "id": 199127
+                            },
+                            "description": "Increases the critical strike chance of your Devastate and Shield Slam by 30% while Shield Block is active.",
+                            "cast_time": "Passive"
+                        }
+                    },
+                    "slot_number": 2
+                },
+                {
+                    "selected": {
+                        "talent": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/pvp-talent/171?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Morale Killer",
+                            "id": 171
+                        },
+                        "spell_tooltip": {
+                            "spell": {
+                                "key": {
+                                    "href": "https://eu.api.blizzard.com/data/wow/spell/199023?namespace=static-8.3.0_32861-eu"
+                                },
+                                "name": "Morale Killer",
+                                "id": 199023
+                            },
+                            "description": "Reduces the cooldown of Demoralizing Shout by 15 sec, and Demoralizing Shout now reduces the damage enemies deal to all targets, not just you.",
+                            "cast_time": "Passive"
+                        }
+                    },
+                    "slot_number": 3
+                },
+                {
+                    "selected": {
+                        "talent": {
+                            "key": {
+                                "href": "https://eu.api.blizzard.com/data/wow/pvp-talent/173?namespace=static-8.3.0_32861-eu"
+                            },
+                            "name": "Shield Bash",
+                            "id": 173
+                        },
+                        "spell_tooltip": {
+                            "spell": {
+                                "key": {
+                                    "href": "https://eu.api.blizzard.com/data/wow/spell/198912?namespace=static-8.3.0_32861-eu"
+                                },
+                                "name": "Shield Bash",
+                                "id": 198912
+                            },
+                            "description": "Bash the target with your shield dealing 9,485 Physical damage and reducing their damage done by 15%. If the target is casting, the cooldown is instantly reset.\r\n\r\nGenerates 3 Rage.",
+                            "cast_time": "Instant",
+                            "range": "Melee Range",
+                            "cooldown": "10 sec cooldown"
+                        }
+                    },
+                    "slot_number": 4
+                }
+            ]
+        },
+        {
+            "specialization": {
+                "key": {
+                    "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/71?namespace=static-8.3.0_32861-eu"
+                },
+                "name": "Arms",
+                "id": 71
+            }
+        }
+    ],
+    "active_specialization": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/72?namespace=static-8.3.0_32861-eu"
+        },
+        "name": "Fury",
+        "id": 72
+    },
+    "character": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/profile/wow/character/moonglade/khoria?namespace=profile-eu"
+        },
+        "name": "Khoria",
+        "id": 133688058,
+        "realm": {
+            "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/1085?namespace=dynamic-eu"
+            },
+            "name": "Moonglade",
+            "id": 1085,
+            "slug": "moonglade"
+        }
+    }
+}

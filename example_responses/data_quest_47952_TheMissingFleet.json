@@ -1,0 +1,56 @@
+Quest 
+"name": "The Missing Fleet",
+"id": 47952
+
+https://eu.api.blizzard.com/data/wow/quest/47952?namespace=static-8.3.0_32861-eu&locale=en_GB&access_token=EUJTVPzm50C8eXPJ1rRm20fESAJKDo0Em9
+
+
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/quest/47952?namespace=static-8.3.0_32861-eu"
+        }
+    },
+    "id": 47952,
+    "title": "The Missing Fleet",
+    "area": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/quest/area/9042?namespace=static-8.3.0_32861-eu"
+        },
+        "name": "Stormsong Valley",
+        "id": 9042
+    },
+    "description": "The tidesage order has a sizable monastery right here in Boralus. I say we start our search for the fleet there.\r\n\r\nSomeone there has to know something, right? You don't just lose the entire legendary Kul Tiran fleet on accident!\r\n\r\nWe'll need to take a ferry over to the monastery. Make sure you bring your pass with you!",
+    "recommended_minimum_level": 110,
+    "recommended_maximum_level": 120,
+    "requirements": {
+        "min_character_level": 110,
+        "faction": {
+            "type": "ALLIANCE",
+            "name": "Alliance"
+        }
+    },
+    "rewards": {
+        "experience": 1700,
+        "reputations": [
+            {
+                "reward": {
+                    "key": {
+                        "href": "https://eu.api.blizzard.com/data/wow/reputation-faction/2162?namespace=static-8.3.0_32861-eu"
+                    },
+                    "name": "Storm's Wake",
+                    "id": 2162
+                },
+                "value": 25
+            }
+        ],
+        "money": {
+            "value": 23400,
+            "units": {
+                "gold": 2,
+                "silver": 34,
+                "copper": 0
+            }
+        }
+    }
+}			
