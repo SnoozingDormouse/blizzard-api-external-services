@@ -74,7 +74,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
                 }
                 else
                 {
-                    throw new HttpRequestException("The server could not be contacted");
+                    throw new HttpRequestException(response.ReasonPhrase);
                 }
             }
             catch

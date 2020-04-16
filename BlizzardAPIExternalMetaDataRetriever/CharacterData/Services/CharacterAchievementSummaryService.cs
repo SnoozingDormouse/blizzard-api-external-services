@@ -33,7 +33,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.CharacterData.Services
 
         internal async Task<CharacterAchievementsSummary> GetCharacterAchievements(string realm, string name)
         {
-            var url = String.Format(_characterAchievementSummaryPath, realm, name);
+            var url = String.Format(_characterAchievementSummaryPath, realm.ToLower(), name.ToLower());
             var response =
                 await _blizzardAPIService
                     .GetBlizzardAPIResponseAsJsonAsync(url);

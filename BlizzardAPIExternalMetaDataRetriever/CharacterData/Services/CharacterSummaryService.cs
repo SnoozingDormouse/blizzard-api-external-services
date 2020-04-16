@@ -33,7 +33,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.CharacterData.Services
 
         internal async Task<CharacterProfileSummary> GetCharacter(string realm, string name)
         {
-            var url = String.Format(_characterSummaryPath, realm, name);
+            var url = String.Format(_characterSummaryPath, realm.ToLower(), name.ToLower());
             var response =
                 await _blizzardAPIService
                     .GetBlizzardAPIResponseAsJsonAsync(url);
