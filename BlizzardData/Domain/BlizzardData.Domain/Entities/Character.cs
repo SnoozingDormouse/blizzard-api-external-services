@@ -9,6 +9,7 @@ namespace BlizzardData.Domain.Entities
         public string Realm { get; set; }
         public PlayerFaction Faction { get; set; }
         public string CharacterClass { get; set; }
+        public string Race { get; set; }
         public int Level { get; set; }
         public UInt64 BlizzardId { get; set; }
         public DateTime LastUpdatedDateTime { get; set; }

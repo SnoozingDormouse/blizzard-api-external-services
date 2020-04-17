@@ -33,8 +33,10 @@ namespace BlizzardAPIExternalMetaDataRetriever
                 options.AddPolicy(AllowSpecificOrigins,
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:4200");
-                        builder.WithOrigins("http://localhost:50421");
+                        builder.WithOrigins("http://localhost:4200",
+                                            "https://localhost:44329")
+                               .AllowAnyHeader()
+                               .AllowAnyMethod();
                     });
             });
 

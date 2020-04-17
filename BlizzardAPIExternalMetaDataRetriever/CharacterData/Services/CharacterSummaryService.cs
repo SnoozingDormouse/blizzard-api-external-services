@@ -53,6 +53,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.CharacterData.Services
                 Realm = character.Realm.Name,
                 Faction = playerFaction,
                 CharacterClass = character.CharacterClass.Name,
+                Race = character.Race.Name,
                 Level = character.Level,
                 BlizzardId = character.BlizzardId,
                 LastUpdatedDateTime = DateTime.Now
