@@ -3,6 +3,7 @@ using BlizzardAPIExternalMetaDataRetriever.Achievements;
 using BlizzardAPIExternalMetaDataRetriever.Reputations.RetrieveFromBlizzardAPI;
 using BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices;
 using BlizzardData.Data;
+using Microsoft.AspNetCore.Authentication.Certificate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -28,6 +29,13 @@ namespace BlizzardAPIExternalMetaDataRetriever
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services
+                .AddAuthentication(CertificateAuthenticationDefaults.AuthenticationScheme)
+                .AddCertificate(options =>
+                {
+                    options.AllowedCertificateTypes = CertificateTypes.All;
+                });
+
             services.AddCors(options =>
             {
                 options.AddPolicy(AllowSpecificOrigins,
@@ -77,6 +85,11 @@ namespace BlizzardAPIExternalMetaDataRetriever
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseHsts();
             }
 
             app.UseSwagger();
