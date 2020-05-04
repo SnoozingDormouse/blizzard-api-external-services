@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Server.Kestrel.Https;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 namespace BlizzardAPIExternalMetaDataRetriever
 {
@@ -21,6 +23,14 @@ namespace BlizzardAPIExternalMetaDataRetriever
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.ConfigureKestrel(serverOptions =>
+                    {
+                        serverOptions.ConfigureHttpsDefaults(listenOptions =>
+                        {
+                            // require certificate
+                            listenOptions.ClientCertificateMode = ClientCertificateMode.RequireCertificate;
+                        });
+                    });
                 });
     }
 }
