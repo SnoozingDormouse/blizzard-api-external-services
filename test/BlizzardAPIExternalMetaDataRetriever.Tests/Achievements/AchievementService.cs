@@ -20,7 +20,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Tests
         }
 
         [Theory]
-        [InlineData(".\\IncomingJson\\Achievement12989.json")]
+        [InlineData(".\\Achievements\\Achievement12989.json")]
         public void GivenExampleJson_Is_Parsed_Correctly_12989(string filename)
         {
             var json = File.ReadAllText(filename);
@@ -47,7 +47,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Tests
         }
 
         [Theory]
-        [InlineData(".\\IncomingJson\\Achievement556.json")]
+        [InlineData(".\\Achievements\\Achievement556.json")]
         public void GivenExampleJson_Is_Parsed_Correctly_556(string filename)
         {
             var json = File.ReadAllText(filename);
@@ -61,7 +61,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Tests
         }
 
         [Theory]
-        [InlineData(".\\IncomingJson\\Achievement12989.json")]
+        [InlineData(".\\Achievements\\Achievement12989.json")]
         public void BattleforAzerothPathfinderPartOne_IsAbleToRecordBothHordeAndAllianceOptions(string filename)
         {
             var json = File.ReadAllText(filename);

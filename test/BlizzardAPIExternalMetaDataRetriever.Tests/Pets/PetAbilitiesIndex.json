@@ -1,0 +1,37 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "https://eu.api.blizzard.com/data/wow/pet-ability/?namespace=static-9.0.5_37760-eu"
+    }
+  },
+  "abilities": [
+    {
+      "key": {
+        "href": "https://eu.api.blizzard.com/data/wow/pet-ability/110?namespace=static-9.0.5_37760-eu"
+      },
+      "name": "Bite",
+      "id": 110
+    },
+    {
+      "key": {
+        "href": "https://eu.api.blizzard.com/data/wow/pet-ability/111?namespace=static-9.0.5_37760-eu"
+      },
+      "name": "Punch",
+      "id": 111
+    },
+    {
+      "key": {
+        "href": "https://eu.api.blizzard.com/data/wow/pet-ability/112?namespace=static-9.0.5_37760-eu"
+      },
+      "name": "Peck",
+      "id": 112
+    },
+    {
+      "key": {
+        "href": "https://eu.api.blizzard.com/data/wow/pet-ability/113?namespace=static-9.0.5_37760-eu"
+      },
+      "name": "Burn",
+      "id": 113
+    }
+  ]
+}

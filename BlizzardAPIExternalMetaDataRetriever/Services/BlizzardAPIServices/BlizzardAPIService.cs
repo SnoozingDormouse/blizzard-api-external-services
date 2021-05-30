@@ -4,34 +4,27 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using BlizzardAPIExternalMetaDataRetriever.Services.Authorization;
-using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
 namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
 {
     public class BlizzardAPIService : IBlizzardAPIService
     {
-        private readonly String _clientId;
-        private readonly String _clientSecret;
+        private readonly BattlenetSettings _battlenetSettings;
         private readonly IHttpClientFactory _clientFactory;
 
         private AccessToken _accessToken;
-        private readonly string _blizzardApiURL;
-        private readonly string _tokenURL;
-
-        public BlizzardAPIService(IHttpClientFactory clientFactory, IConfiguration configuration)
-        {
-            _clientFactory = clientFactory;
-            _clientId = configuration["Battlenet:ClientId"];
-            _clientSecret = configuration["Battlenet:ClientSecret"];
-
-            _blizzardApiURL = configuration["Battlenet:BlizzardApiURL"];
-            _tokenURL = configuration["Battlenet:TokenURL"];
-        }
 
         public BlizzardAPIService()
         {
 
+        }
+
+        public BlizzardAPIService(IOptions<BattlenetSettings> settings, IHttpClientFactory clientFactory)
+        {
+            _battlenetSettings = settings.Value;
+            _clientFactory = clientFactory;
         }
 
         private string GetNamespace(string blizzardQueryPath)
@@ -48,7 +41,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
         public async Task<string> GetBlizzardAPIResponseAsJsonAsync(string blizzardQueryPath)
         {
             var nameSpace = GetNamespace(blizzardQueryPath);
-            var queryURL = String.Format(_blizzardApiURL, blizzardQueryPath, nameSpace, "{0}");
+            var queryURL = String.Format(_battlenetSettings.BlizzardApiURL, blizzardQueryPath, nameSpace, "{0}");
 
             if (!ValidAccessToken())
             {
@@ -66,7 +59,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
 
             try
             {
-                using HttpClient httpClient = _clientFactory.CreateClient();
+                HttpClient httpClient = _clientFactory.CreateClient("blizzardAPI");
                 HttpResponseMessage response = await httpClient.GetAsync(apiURL);
                 if (response.IsSuccessStatusCode)
                 {
@@ -77,7 +70,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
                     throw new HttpRequestException(response.ReasonPhrase);
                 }
             }
-            catch
+            catch (Exception)
             {
                 throw;
             }
@@ -96,12 +89,12 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
 
             try
             {
-                using HttpClient httpClient = _clientFactory.CreateClient();
+                HttpClient httpClient = _clientFactory.CreateClient("blizzardIMS");
                 string tokenRequestParameters;
                 var parameters = new Dictionary<string, string>()
                             {
-                                { "client_id", _clientId },
-                                { "client_secret", _clientSecret },
+                                { "client_id", _battlenetSettings.ClientId },
+                                { "client_secret", _battlenetSettings.ClientSecret },
                                 { "grant_type", "client_credentials" },
                             };
 
@@ -109,7 +102,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
 
                 HttpContent content = new StringContent(tokenRequestParameters, Encoding.UTF8, "application/x-www-form-urlencoded");
 
-                HttpResponseMessage response = await httpClient.PostAsync(_tokenURL, content);
+                HttpResponseMessage response = await httpClient.PostAsync(_battlenetSettings.TokenURL, content);
                 if (response.IsSuccessStatusCode)
                 {
                     token = JsonConvert

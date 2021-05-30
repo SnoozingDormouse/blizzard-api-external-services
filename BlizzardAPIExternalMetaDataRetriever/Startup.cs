@@ -3,14 +3,13 @@ using BlizzardAPIExternalMetaDataRetriever.Achievements;
 using BlizzardAPIExternalMetaDataRetriever.Reputations.RetrieveFromBlizzardAPI;
 using BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices;
 using BlizzardData.Data;
-using Microsoft.AspNetCore.Authentication.Certificate;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
 
 namespace BlizzardAPIExternalMetaDataRetriever
 {
@@ -28,9 +27,12 @@ namespace BlizzardAPIExternalMetaDataRetriever
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMediatR(typeof(Startup));
             services.AddHttpClient();
             services.AddControllers();
             services.AddSwaggerGen();
+
+            services.Configure<BattlenetSettings>(options => Configuration.GetSection("Battlenet").Bind(options));
 
             services.AddDbContext<DataContext>(
                 options => 
@@ -38,7 +40,7 @@ namespace BlizzardAPIExternalMetaDataRetriever
                 .UseLazyLoadingProxies()
                 .UseSqlServer(ConnectionString), ServiceLifetime.Scoped);
 
-            services.AddScoped<IBlizzardAPIService, BlizzardAPIService>();
+            services.AddTransient<IBlizzardAPIService, BlizzardAPIService>();
 
             services.AddScoped<IAchievementService>(s => new AchievementService(
                 s.GetService<DataContext>(),
