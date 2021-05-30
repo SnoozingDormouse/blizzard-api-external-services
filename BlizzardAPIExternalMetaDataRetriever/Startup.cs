@@ -24,32 +24,13 @@ namespace BlizzardAPIExternalMetaDataRetriever
 
         public IConfiguration Configuration { get; }
         public String ConnectionString { get; }
-        readonly string AllowSpecificOrigins = "_allowSpecificOrigins";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services
-                .AddAuthentication(CertificateAuthenticationDefaults.AuthenticationScheme)
-                .AddCertificate(options =>
-                {
-                    options.AllowedCertificateTypes = CertificateTypes.All;
-                });
-
-            services.AddCors(options =>
-            {
-                options.AddPolicy(AllowSpecificOrigins,
-                    builder =>
-                    {
-                        builder.WithOrigins("http://localhost:4200",
-                                            "https://localhost:44329")
-                               .AllowAnyHeader()
-                               .AllowAnyMethod();
-                    });
-            });
-
             services.AddHttpClient();
             services.AddControllers();
+            services.AddSwaggerGen();
 
             services.AddDbContext<DataContext>(
                 options => 
@@ -66,45 +47,30 @@ namespace BlizzardAPIExternalMetaDataRetriever
             services.AddScoped<IReputationService>(s => new ReputationService(
                 s.GetService<DataContext>(),
                 s.GetService<IBlizzardAPIService>()));
-
-            // Register the Swagger generator, defining 1 or more Swagger documents
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Version = "v1",
-                    Title = "Blizzard API External Services",
-                    Description = "Microservice to collect Blizard World of Warcraft Data from the Blizzard API",
-                });
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "External Blizzard API Connector Service");
+                c.RoutePrefix = string.Empty;
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-                app.UseHsts();
-            }
 
-            app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BlizzardAPIExternalServices API 0.1.0"));
-
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
-            app.UseAuthorization();
-            app.UseCors(AllowSpecificOrigins);
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }

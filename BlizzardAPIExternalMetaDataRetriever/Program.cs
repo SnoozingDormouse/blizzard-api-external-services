@@ -23,14 +23,6 @@ namespace BlizzardAPIExternalMetaDataRetriever
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.ConfigureKestrel(serverOptions =>
-                    {
-                        serverOptions.ConfigureHttpsDefaults(listenOptions =>
-                        {
-                            // require certificate
-                            listenOptions.ClientCertificateMode = ClientCertificateMode.RequireCertificate;
-                        });
-                    });
                 });
     }
 }
