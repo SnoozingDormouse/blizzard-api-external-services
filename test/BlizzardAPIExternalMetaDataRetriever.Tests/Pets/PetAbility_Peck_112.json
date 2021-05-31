@@ -1,0 +1,21 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pet-ability/112?namespace=static-9.0.5_37760-us"
+    }
+  },
+  "id": 112,
+  "name": "Peck",
+  "battle_pet_type": {
+    "id": 2,
+    "type": "FLYING",
+    "name": "Flying"
+  },
+  "rounds": 1,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/pet-ability/112?namespace=static-9.0.5_37760-us"
+    },
+    "id": 112
+  }
+}

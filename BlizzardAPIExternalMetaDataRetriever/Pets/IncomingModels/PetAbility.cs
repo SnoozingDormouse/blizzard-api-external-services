@@ -16,6 +16,9 @@ namespace BlizzardAPIExternalMetaDataRetriever.Pets.IncomingModels
         [JsonProperty("rounds")]
         public int Rounds { get; set; }
 
+        [JsonProperty("cooldown")]
+        public int Cooldown { get; set; }
+
         public class PetType
         {
             [JsonProperty("id")]

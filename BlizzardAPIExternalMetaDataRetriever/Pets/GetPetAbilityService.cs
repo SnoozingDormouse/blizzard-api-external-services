@@ -30,6 +30,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Pets
                 PetAbilityType = petAbility.BattlePetType.Name,
                 PetAbilityTypeId = petAbility.BattlePetType.Id,
                 Rounds = petAbility.Rounds,
+                Cooldown = petAbility.Cooldown
             };
         }
     }

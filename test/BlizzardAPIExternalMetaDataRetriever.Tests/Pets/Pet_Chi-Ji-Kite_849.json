@@ -1,0 +1,39 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pet/849?namespace=static-9.0.5_37760-us"
+    }
+  },
+  "id": 849,
+  "name": "Chi-Ji Kite",
+  "battle_pet_type": {
+    "id": 2,
+    "type": "FLYING",
+    "name": "Flying"
+  },
+  "description": "A beautiful kite brought to life by the scribes of Pandaria.",
+  "is_capturable": false,
+  "is_tradable": false,
+  "is_battlepet": false,
+  "is_alliance_only": false,
+  "is_horde_only": false,
+  "source": {
+    "type": "PROFESSION",
+    "name": "Profession"
+  },
+  "icon": "https://render-us.worldofwarcraft.com/icons/56/ability_mount_pandarenkitemount.jpg",
+  "creature": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/creature/66104?namespace=static-9.0.5_37760-us"
+    },
+    "name": "Chi-Ji Kite",
+    "id": 66104
+  },
+  "is_random_creature_display": false,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/pet/849?namespace=static-9.0.5_37760-us"
+    },
+    "id": 849
+  }
+}

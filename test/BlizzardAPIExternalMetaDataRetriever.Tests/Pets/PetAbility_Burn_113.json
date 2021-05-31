@@ -1,0 +1,21 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pet-ability/113?namespace=static-9.0.5_37760-us"
+    }
+  },
+  "id": 113,
+  "name": "Burn",
+  "battle_pet_type": {
+    "id": 6,
+    "type": "ELEMENTAL",
+    "name": "Elemental"
+  },
+  "rounds": 1,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/pet-ability/113?namespace=static-9.0.5_37760-us"
+    },
+    "id": 113
+  }
+}

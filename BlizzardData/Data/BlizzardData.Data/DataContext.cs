@@ -56,6 +56,17 @@ namespace BlizzardData.Data
 
             modelBuilder.Entity<CriteriaReputation>()
                 .HasKey(c => new { c.CriteriaId, c.ReputationId });
+
+            modelBuilder.Entity<BattlePet>()
+                .Property(p => p.Id)
+                .ValueGeneratedNever();
+
+            modelBuilder.Entity<BattlePetAbility>()
+                .Property(a => a.Id)
+                .ValueGeneratedNever();
+
+            modelBuilder.Entity<BattlePetBattlePetAbility>()
+                .HasKey(c => new { c.BattlePetId, c.BattlePetAbilityId });
         }
 
 
@@ -69,6 +80,10 @@ namespace BlizzardData.Data
 
         public virtual DbSet<ReputationFaction> ReputationFactions { get; set; }
         public virtual DbSet<CriteriaReputation> CriteriaReputations { get; set; }
+
+        public virtual DbSet<BattlePet> BattlePets { get; set; }
+        public virtual DbSet<BattlePetAbility> BattlePetAbilities { get; set; }
+        public virtual DbSet<BattlePetBattlePetAbility> BattlePetBattlePetAbilities { get; set; }
 
 
         // Manually created links

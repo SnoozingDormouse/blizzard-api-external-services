@@ -24,11 +24,18 @@ namespace BlizzardAPIExternalMetaDataRetriever.Pets
 
         public bool IsHordeOnly { get; set; }
 
-        public string Source { get; set; }
+        public PetSource Source { get; set; }
 
         public IEnumerable<PetAbility> Abilities { get; set; }
 
         public CreatureLink Creature { get; set; }
+
+        public class PetSource
+        {
+            public string Type { get; set; }
+
+            public string Name { get; set; }
+        }
 
         public class PetAbility
         {

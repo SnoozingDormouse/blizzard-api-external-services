@@ -1,0 +1,21 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pet-ability/111?namespace=static-9.0.5_37760-us"
+    }
+  },
+  "id": 111,
+  "name": "Punch",
+  "battle_pet_type": {
+    "id": 0,
+    "type": "HUMANOID",
+    "name": "Humanoid"
+  },
+  "rounds": 1,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/pet-ability/111?namespace=static-9.0.5_37760-us"
+    },
+    "id": 111
+  }
+}

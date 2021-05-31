@@ -1,0 +1,107 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pet/40?namespace=static-9.0.5_37760-us"
+    }
+  },
+  "id": 40,
+  "name": "Bombay Cat",
+  "battle_pet_type": {
+    "id": 7,
+    "type": "BEAST",
+    "name": "Beast"
+  },
+  "description": "Donni Anthania plans to have a bombay buried with her when she dies. A wise adventurer can put its talents to much better use.",
+  "is_capturable": false,
+  "is_tradable": true,
+  "is_battlepet": true,
+  "is_alliance_only": false,
+  "is_horde_only": false,
+  "abilities": [
+    {
+      "ability": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet-ability/429?namespace=static-9.0.5_37760-us"
+        },
+        "name": "Claw",
+        "id": 429
+      },
+      "slot": 0,
+      "required_level": 1
+    },
+    {
+      "ability": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet-ability/492?namespace=static-9.0.5_37760-us"
+        },
+        "name": "Rake",
+        "id": 492
+      },
+      "slot": 1,
+      "required_level": 2
+    },
+    {
+      "ability": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet-ability/538?namespace=static-9.0.5_37760-us"
+        },
+        "name": "Devour",
+        "id": 538
+      },
+      "slot": 2,
+      "required_level": 4
+    },
+    {
+      "ability": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet-ability/535?namespace=static-9.0.5_37760-us"
+        },
+        "name": "Pounce",
+        "id": 535
+      },
+      "slot": 0,
+      "required_level": 10
+    },
+    {
+      "ability": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet-ability/357?namespace=static-9.0.5_37760-us"
+        },
+        "name": "Screech",
+        "id": 357
+      },
+      "slot": 1,
+      "required_level": 15
+    },
+    {
+      "ability": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet-ability/536?namespace=static-9.0.5_37760-us"
+        },
+        "name": "Prowl",
+        "id": 536
+      },
+      "slot": 2,
+      "required_level": 20
+    }
+  ],
+  "source": {
+    "type": "VENDOR",
+    "name": "Vendor"
+  },
+  "icon": "https://render-us.worldofwarcraft.com/icons/56/inv_pet_cats_bombaycat.jpg",
+  "creature": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/creature/7385?namespace=static-9.0.5_37760-us"
+    },
+    "name": "Bombay Cat",
+    "id": 7385
+  },
+  "is_random_creature_display": false,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/pet/40?namespace=static-9.0.5_37760-us"
+    },
+    "id": 40
+  }
+}

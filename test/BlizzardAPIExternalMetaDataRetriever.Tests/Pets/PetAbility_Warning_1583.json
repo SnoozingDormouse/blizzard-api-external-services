@@ -1,0 +1,22 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pet-ability/1583?namespace=static-9.0.5_37760-us"
+    }
+  },
+  "id": 1583,
+  "name": "Warning!",
+  "battle_pet_type": {
+    "id": 9,
+    "type": "MECHANICAL",
+    "name": "Mechanical"
+  },
+  "cooldown": 8,
+  "rounds": 3,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/pet-ability/1583?namespace=static-9.0.5_37760-us"
+    },
+    "id": 1583
+  }
+}

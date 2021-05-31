@@ -11,5 +11,7 @@
         public int PetAbilityTypeId { get; set; }
 
         public int Rounds { get; set; }
+
+        public int Cooldown { get; set; }
     }
 }

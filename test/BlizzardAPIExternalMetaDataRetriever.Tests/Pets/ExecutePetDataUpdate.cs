@@ -1,41 +1,41 @@
 ﻿using BlizzardAPIExternalMetaDataRetriever.Pets;
+using BlizzardData.Data;
 using FluentAssertions;
 using FluentAssertions.Execution;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 using Xunit;
 
 namespace BlizzardAPIExternalMetaDataRetriever.Tests.Pets
 {
-    public class GetPetAbility
+    public class ExecutePetDataUpdate
     {
-        [Theory]
-        [InlineData(110, "Bite", "Beast", 7, 1, 0)]
-        [InlineData(1583, "Warning!", "Mechanical", 9, 3, 8)]
-        public async void PetAbility_Is_Parsed_Correctly(int id, string name, string petAbilityType, int petAbilityId, int rounds, int cooldown)
+        [Fact]
+        public async void When_PetDataUpdate_Is_Requested()
         {
             // arrange
             var testBootstrapper = new TestBootstrapper();
             var mockBlizzardApiHelper = new MockBlizzardApiHelper();
 
+            mockBlizzardApiHelper.SetupPetMock(testBootstrapper);
+            mockBlizzardApiHelper.SetupPetIndexMock(testBootstrapper);
             mockBlizzardApiHelper.SetupPetAbilityMock(testBootstrapper);
+            mockBlizzardApiHelper.SetupPetAbilitiesIndexMock(testBootstrapper);
+
             mockBlizzardApiHelper.SetupBlizzardIMSMock(testBootstrapper);
 
             var mediator = testBootstrapper.ServiceProvider.GetRequiredService<IMediator>();
 
             // act
-            var result = await mediator.Send(new GetPetAbilityRequest { Id = id });
+            var result = await mediator.Send(new PetDataUpdateRequest());
 
             // assert
             using (new AssertionScope())
             {
                 result.Should().NotBeNull();
-                result.Name.Should().Be(name);
-                result.PetAbilityType.Should().Be(petAbilityType);
-                result.PetAbilityTypeId.Should().Be(petAbilityId);
-                result.Rounds.Should().Be(rounds);
-                result.Cooldown.Should().Be(cooldown);
+                result.Should().StartWith("3 pets and 4 pet abilities downloaded");
             }
         }
     }

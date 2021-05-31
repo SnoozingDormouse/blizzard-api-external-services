@@ -48,12 +48,40 @@ namespace BlizzardAPIExternalMetaDataRetriever.Tests
 
         internal void SetupPetAbilityMock(TestBootstrapper testBootstrapper)
         {
-            var petAbilityJson = File.ReadAllText(@".\Pets\PetAbility.json");
+            var petAbility110Json = File.ReadAllText(@".\Pets\PetAbility_Bite_110.json");
 
             var blizzardPetAbilityPath = @"https://fakeblizzardapiendpoint/data/wow/pet-ability/110?namespace=static-eu&locale=en_GB&access_token=" + _accessToken.Token;
             testBootstrapper.MockHttpMessageHandler
                     .When(HttpMethod.Get, blizzardPetAbilityPath)
-                    .Respond("application/json", petAbilityJson);
+                    .Respond("application/json", petAbility110Json);
+
+            var petAbility111Json = File.ReadAllText(@".\Pets\PetAbility_Punch_111.json");
+
+            blizzardPetAbilityPath = @"https://fakeblizzardapiendpoint/data/wow/pet-ability/111?namespace=static-eu&locale=en_GB&access_token=" + _accessToken.Token;
+            testBootstrapper.MockHttpMessageHandler
+                    .When(HttpMethod.Get, blizzardPetAbilityPath)
+                    .Respond("application/json", petAbility111Json);
+
+            var petAbility112Json = File.ReadAllText(@".\Pets\PetAbility_Peck_112.json");
+
+            blizzardPetAbilityPath = @"https://fakeblizzardapiendpoint/data/wow/pet-ability/112?namespace=static-eu&locale=en_GB&access_token=" + _accessToken.Token;
+            testBootstrapper.MockHttpMessageHandler
+                    .When(HttpMethod.Get, blizzardPetAbilityPath)
+                    .Respond("application/json", petAbility112Json);
+
+            var petAbility113Json = File.ReadAllText(@".\Pets\PetAbility_Burn_113.json");
+
+            blizzardPetAbilityPath = @"https://fakeblizzardapiendpoint/data/wow/pet-ability/113?namespace=static-eu&locale=en_GB&access_token=" + _accessToken.Token;
+            testBootstrapper.MockHttpMessageHandler
+                    .When(HttpMethod.Get, blizzardPetAbilityPath)
+                    .Respond("application/json", petAbility113Json);
+
+            var petAbility1583Json = File.ReadAllText(@".\Pets\PetAbility_Warning_1583.json");
+
+            blizzardPetAbilityPath = @"https://fakeblizzardapiendpoint/data/wow/pet-ability/1583?namespace=static-eu&locale=en_GB&access_token=" + _accessToken.Token;
+            testBootstrapper.MockHttpMessageHandler
+                    .When(HttpMethod.Get, blizzardPetAbilityPath)
+                    .Respond("application/json", petAbility1583Json);
         }
 
         public void SetupPetIndexMock(TestBootstrapper testBootstrapper)
@@ -68,13 +96,33 @@ namespace BlizzardAPIExternalMetaDataRetriever.Tests
 
         public void SetupPetMock(TestBootstrapper testBootstrapper)
         {
-            var petJson = File.ReadAllText(@".\Pets\Pet_MechanicalSquirrel_39.json");
+            var pet39Json = File.ReadAllText(@".\Pets\Pet_MechanicalSquirrel_39.json");
 
             var blizzardPetPath = @"https://fakeblizzardapiendpoint/data/wow/pet/39?namespace=static-eu&locale=en_GB&access_token=" + _accessToken.Token;
             testBootstrapper.MockHttpMessageHandler
                     .When(HttpMethod.Get, blizzardPetPath)
-                    .Respond("application/json", petJson);
-        }
+                    .Respond("application/json", pet39Json);
 
+            var pet40Json = File.ReadAllText(@".\Pets\Pet_BombayCat_40.json");
+
+            blizzardPetPath = @"https://fakeblizzardapiendpoint/data/wow/pet/40?namespace=static-eu&locale=en_GB&access_token=" + _accessToken.Token;
+            testBootstrapper.MockHttpMessageHandler
+                    .When(HttpMethod.Get, blizzardPetPath)
+                    .Respond("application/json", pet40Json);
+
+            var pet41Json = File.ReadAllText(@".\Pets\Pet_CornishRexCat_41.json");
+
+            blizzardPetPath = @"https://fakeblizzardapiendpoint/data/wow/pet/41?namespace=static-eu&locale=en_GB&access_token=" + _accessToken.Token;
+            testBootstrapper.MockHttpMessageHandler
+                    .When(HttpMethod.Get, blizzardPetPath)
+                    .Respond("application/json", pet41Json);
+
+            var pet849Json = File.ReadAllText(@".\Pets\Pet_Chi-Ji-Kite_849.json");
+
+            blizzardPetPath = @"https://fakeblizzardapiendpoint/data/wow/pet/849?namespace=static-eu&locale=en_GB&access_token=" + _accessToken.Token;
+            testBootstrapper.MockHttpMessageHandler
+                    .When(HttpMethod.Get, blizzardPetPath)
+                    .Respond("application/json", pet849Json);
+        }
     }
 }
