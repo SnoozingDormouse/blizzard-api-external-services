@@ -1,6 +1,6 @@
 ﻿namespace BlizzardData.Domain.Entities
 {
-    public class BattlePet
+    public record BattlePet
     {
         public int Id { get; set; }
 

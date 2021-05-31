@@ -40,7 +40,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Pets
 
         public async Task<string> UpdateAll()
         {
-            Stopwatch stopwatch = new Stopwatch();
+            Stopwatch stopwatch = new();
             int currentPetId = -1;
             stopwatch.Start();
 
@@ -48,7 +48,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Pets
 
             try
             {
-                List<int> petIds = new List<int>(await _mediator.Send(new GetPetIndexRequest()));
+                List<int> petIds = new(await _mediator.Send(new GetPetIndexRequest()));
 
                 foreach (var id in petIds)
                 {

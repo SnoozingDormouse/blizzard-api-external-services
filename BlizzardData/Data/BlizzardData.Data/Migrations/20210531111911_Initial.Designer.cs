@@ -10,15 +10,15 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlizzardData.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200414143124_initial_database")]
-    partial class initial_database
+    [Migration("20210531111911_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
+                .HasAnnotation("ProductVersion", "5.0.6")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("BlizzardData.Domain.Entities.Achievement", b =>
@@ -62,6 +62,90 @@ namespace BlizzardData.Data.Migrations
                     b.ToTable("AchievementCriterias");
                 });
 
+            modelBuilder.Entity("BlizzardData.Domain.Entities.BattlePet", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Family")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsAllianceOnly")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsBattlePet")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsCapturable")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsHordeOnly")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsTradable")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SourceName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SourceType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("BattlePets");
+                });
+
+            modelBuilder.Entity("BlizzardData.Domain.Entities.BattlePetAbility", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Cooldown")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Family")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Rounds")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("BattlePetAbilities");
+                });
+
+            modelBuilder.Entity("BlizzardData.Domain.Entities.BattlePetBattlePetAbility", b =>
+                {
+                    b.Property<int>("BattlePetId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BattlePetAbilityId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RequiredLevel")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Slot")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SlotColumn")
+                        .HasColumnType("int");
+
+                    b.HasKey("BattlePetId", "BattlePetAbilityId");
+
+                    b.ToTable("BattlePetBattlePetAbilities");
+                });
+
             modelBuilder.Entity("BlizzardData.Domain.Entities.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -79,7 +163,8 @@ namespace BlizzardData.Data.Migrations
                 {
                     b.Property<decimal>("BlizzardId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("decimal(20,0)");
+                        .HasColumnType("decimal(20,0)")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.None);
 
                     b.Property<string>("CharacterClass")
                         .HasColumnType("nvarchar(max)");
@@ -94,6 +179,9 @@ namespace BlizzardData.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Race")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Realm")

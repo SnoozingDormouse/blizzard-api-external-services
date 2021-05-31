@@ -27,7 +27,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
             _clientFactory = clientFactory;
         }
 
-        private string GetNamespace(string blizzardQueryPath)
+        private static string GetNamespace(string blizzardQueryPath)
         {
             if (blizzardQueryPath.StartsWith("data", StringComparison.CurrentCultureIgnoreCase))
                 return "static-eu";
@@ -55,7 +55,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices
 
         internal async Task<string> GetBlizzardAPIInfoAsync(string apiURL)
         {
-            String blizzardAPIResponse = null;
+            string blizzardAPIResponse;
 
             try
             {

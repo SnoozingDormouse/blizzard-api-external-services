@@ -1,5 +1,6 @@
 ﻿using BlizzardData.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace BlizzardData.Data
 {
@@ -12,6 +13,10 @@ namespace BlizzardData.Data
         DbSet<CriteriaCriteria> CriteriaCriterias { get; set; }
         DbSet<Goal> Goals { get; set; }
         DbSet<GoalCriteria> GoalCriterias { get; set; }
+        DbSet<BattlePet> BattlePets { get; set; }
+        DbSet<BattlePetAbility> BattlePetAbilities { get; set; }
+        DbSet<BattlePetBattlePetAbility> BattlePetBattlePetAbilities { get; set; }
+
 
         // Reputation
         DbSet<ReputationFaction> ReputationFactions { get; set; }
@@ -21,7 +26,8 @@ namespace BlizzardData.Data
         DbSet<Character> Characters { get; set; }
         DbSet<CharacterAchievement> CharacterAchievements { get; set; }
         DbSet<CharacterCriteria> CharacterCriterias { get; set; }
-        
+
         int SaveChanges();
+        Task<int> SaveChangesAsync();
     }
 }

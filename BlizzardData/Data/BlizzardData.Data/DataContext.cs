@@ -1,6 +1,7 @@
 ﻿using BlizzardData.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Threading.Tasks;
 
 namespace BlizzardData.Data
 {
@@ -9,7 +10,6 @@ namespace BlizzardData.Data
         public DataContext(DbContextOptions<DataContext> options)
             : base(options)
         { 
-
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -69,7 +69,6 @@ namespace BlizzardData.Data
                 .HasKey(c => new { c.BattlePetId, c.BattlePetAbilityId });
         }
 
-
         // Game Data
         public virtual DbSet<Achievement> Achievements { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
@@ -95,5 +94,10 @@ namespace BlizzardData.Data
         public virtual DbSet<Character> Characters { get; set; }
         public virtual DbSet<CharacterAchievement> CharacterAchievements { get; set; }
         public virtual DbSet<CharacterCriteria> CharacterCriterias { get; set; }
+
+        public async Task<int> SaveChangesAsync()
+        {
+            return await base.SaveChangesAsync();
+        }
     }
 }

@@ -1,9 +1,13 @@
 ﻿using BlizzardAPIExternalMetaDataRetriever.Services.BlizzardAPIServices;
+using BlizzardData.Data;
+using BlizzardData.Data.Features.BattlePetFeatures;
 using FakeItEasy;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using RichardSzalay.MockHttp;
+using System;
 using System.Net.Http;
 
 namespace BlizzardAPIExternalMetaDataRetriever.Tests
@@ -14,7 +18,8 @@ namespace BlizzardAPIExternalMetaDataRetriever.Tests
         {
             var services = new ServiceCollection();
             
-            services.AddMediatR(typeof(Startup));
+            services.AddMediatR(typeof(Startup), typeof(CreateBattlePetCommand));
+            services.AddAutoMapper(typeof(Startup));
             services.AddScoped<IBlizzardAPIService, BlizzardAPIService>();
 
             SetupFakes();
@@ -35,7 +40,12 @@ namespace BlizzardAPIExternalMetaDataRetriever.Tests
 
         private void InjectFakes(IServiceCollection services)
         {
-            IOptions<BattlenetSettings> fakeBattlenetOptions = Options.Create<BattlenetSettings>(new BattlenetSettings
+            services.AddDbContext<IDataContext, DataContext>
+                (options => options.UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString()),
+                ServiceLifetime.Scoped,
+                ServiceLifetime.Scoped);
+
+            IOptions <BattlenetSettings> fakeBattlenetOptions = Options.Create<BattlenetSettings>(new BattlenetSettings
             {
                 ClientId = "clientId",
                 ClientSecret = "clientSecret",

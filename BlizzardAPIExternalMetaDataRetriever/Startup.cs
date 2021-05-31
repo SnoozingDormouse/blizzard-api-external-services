@@ -18,7 +18,6 @@ namespace BlizzardAPIExternalMetaDataRetriever
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            ConnectionString = Configuration["Database:ConnectionString"] ?? throw new ArgumentNullException("Database:ConnectionString");
         }
 
         public IConfiguration Configuration { get; }
@@ -27,18 +26,19 @@ namespace BlizzardAPIExternalMetaDataRetriever
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMediatR(typeof(Startup));
+            services.AddMediatR(typeof(Startup), typeof(IDataContext));
             services.AddHttpClient();
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddAutoMapper(typeof(Startup));
 
             services.Configure<BattlenetSettings>(options => Configuration.GetSection("Battlenet").Bind(options));
 
-            services.AddDbContext<DataContext>(
+            services.AddDbContext<IDataContext, DataContext>(
                 options => 
-                options
-                .UseLazyLoadingProxies()
-                .UseSqlServer(ConnectionString), ServiceLifetime.Scoped);
+                    options
+                        .UseLazyLoadingProxies()
+                        .UseSqlServer(Configuration.GetSection("Database:ConnectionString").Value), ServiceLifetime.Scoped);
 
             services.AddTransient<IBlizzardAPIService, BlizzardAPIService>();
 

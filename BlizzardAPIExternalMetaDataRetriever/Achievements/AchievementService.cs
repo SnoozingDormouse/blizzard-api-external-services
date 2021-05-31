@@ -53,7 +53,7 @@ namespace BlizzardAPIExternalMetaDataRetriever.Achievements
 
         public async Task<string> UpdateAll()
         {
-            Stopwatch stopwatch = new Stopwatch();
+            Stopwatch stopwatch = new();
             int currentAchievementId = -1;
             stopwatch.Start();
 

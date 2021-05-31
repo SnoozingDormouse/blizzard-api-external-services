@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlizzardData.Domain", "Bliz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlizzardData.Data", "BlizzardData\Data\BlizzardData.Data\BlizzardData.Data.csproj", "{CE5F05CF-1AEA-4C94-B69A-FADBF8A5500B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlizzardAPIExternalMetaDataRetriever.Tests", "test\BlizzardAPIExternalMetaDataRetriever.Tests\BlizzardAPIExternalMetaDataRetriever.Tests.csproj", "{92395F7C-645E-435D-ADC9-0376A9DFED13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlizzardAPIExternalMetaDataRetriever.Tests", "test\BlizzardAPIExternalMetaDataRetriever.Tests\BlizzardAPIExternalMetaDataRetriever.Tests.csproj", "{92395F7C-645E-435D-ADC9-0376A9DFED13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlizzardData.Maps", "BlizzardData.Maps\BlizzardData.Maps.csproj", "{FD884C83-70D8-4ECB-8C47-6FC2C7A2C9AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{92395F7C-645E-435D-ADC9-0376A9DFED13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92395F7C-645E-435D-ADC9-0376A9DFED13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92395F7C-645E-435D-ADC9-0376A9DFED13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD884C83-70D8-4ECB-8C47-6FC2C7A2C9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD884C83-70D8-4ECB-8C47-6FC2C7A2C9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD884C83-70D8-4ECB-8C47-6FC2C7A2C9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD884C83-70D8-4ECB-8C47-6FC2C7A2C9AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
